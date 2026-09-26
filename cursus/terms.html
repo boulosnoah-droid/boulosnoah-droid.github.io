@@ -28,8 +28,12 @@
 <section><h2>Droit applicable</h2>
 <p>Ces conditions sont soumises au droit suisse, sous réserve des règles impératives de ton pays de résidence.</p></section>
 
-<section><h2>Contact</h2><p><a href="mailto:boulos.noah@gmail.com">boulos.noah@gmail.com</a></p></section>
+<section><h2>Contact</h2><p>Dans l'app : Réglages › Aide › Contacter le support, ou la <a href="support.html">page Support</a>.</p></section>
 
 <nav><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a><a href="support.html">Support</a></nav>
-<footer>© 2026 Cursus · <a href="mailto:boulos.noah@gmail.com">boulos.noah@gmail.com</a></footer>
-</main></body></html>
+<footer>© 2026 Cursus</footer>
+</main><script>
+document.querySelectorAll('[data-mail]').forEach(function(b){b.addEventListener('click',function(){
+var a=['boulos.noah','gmail.com'].join(String.fromCharCode(64));
+location.href='mailto:'+a+'?subject='+encodeURIComponent(b.getAttribute('data-mail'));});});
+</script></body></html>

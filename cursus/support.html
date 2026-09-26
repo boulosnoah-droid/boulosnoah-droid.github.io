@@ -7,7 +7,8 @@
 <h1>Support</h1><p class="updated">Mise à jour le 26 septembre 2026</p>
 
 <section><h2>Besoin d'aide ?</h2>
-<p>Un bug, une question, une idée ? Écris à <a href="mailto:boulos.noah@gmail.com?subject=Cursus">boulos.noah@gmail.com</a>, nous répondons dès que possible. Indique si possible ton appareil, sa version (iOS, macOS) et ce qui s'est passé.</p></section>
+<p>Un bug, une question, une idée ? Le plus simple : dans l'app, <b>Réglages › Aide</b> — « Signaler un bug » ou « Contacter le support » préparent un e-mail avec la version de Cursus et de ton appareil.</p>
+<div class="contact"><button class="button" data-mail="Cursus – Support">Écrire au support</button><span class="note">Ouvre ton app Mail.</span></div></section>
 <section><h2>Questions fréquentes</h2>
 <p><strong>Comment synchroniser iPhone et Mac ?</strong><br>Réglages › Synchronisation › Se connecter avec Apple, sur chaque appareil, avec le même compte Apple.</p>
 <p><strong>Comment restaurer mon abonnement ?</strong><br>Sur l'écran d'abonnement, touche « Restaurer ». Il est lié à ton compte Apple.</p>
@@ -17,5 +18,9 @@
 <p><strong>Comment supprimer mon compte ?</strong><br>Réglages › Synchronisation › Supprimer mon compte : toutes tes données sont effacées de nos serveurs.</p></section>
 
 <nav><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a><a href="support.html">Support</a></nav>
-<footer>© 2026 Cursus · <a href="mailto:boulos.noah@gmail.com">boulos.noah@gmail.com</a></footer>
-</main></body></html>
+<footer>© 2026 Cursus</footer>
+</main><script>
+document.querySelectorAll('[data-mail]').forEach(function(b){b.addEventListener('click',function(){
+var a=['boulos.noah','gmail.com'].join(String.fromCharCode(64));
+location.href='mailto:'+a+'?subject='+encodeURIComponent(b.getAttribute('data-mail'));});});
+</script></body></html>

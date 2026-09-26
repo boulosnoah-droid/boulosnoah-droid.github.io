@@ -28,8 +28,12 @@
 <section><h2>Governing law</h2>
 <p>These terms are governed by Swiss law, subject to the mandatory rules of your country of residence.</p></section>
 
-<section><h2>Contact</h2><p><a href="mailto:boulos.noah@gmail.com">boulos.noah@gmail.com</a></p></section>
+<section><h2>Contact</h2><p>In the app: Settings › Help › Contact support, or the <a href="support.html">Support page</a>.</p></section>
 
 <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
-<footer>© 2026 Cursus · <a href="mailto:boulos.noah@gmail.com">boulos.noah@gmail.com</a></footer>
-</main></body></html>
+<footer>© 2026 Cursus</footer>
+</main><script>
+document.querySelectorAll('[data-mail]').forEach(function(b){b.addEventListener('click',function(){
+var a=['boulos.noah','gmail.com'].join(String.fromCharCode(64));
+location.href='mailto:'+a+'?subject='+encodeURIComponent(b.getAttribute('data-mail'));});});
+</script></body></html>

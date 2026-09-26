@@ -18,6 +18,25 @@ nav a{color:var(--muted)}
 .button{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;padding:14px 26px;border-radius:14px;font-size:17px}
 .code{font:600 28px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:3px;background:var(--bg);border-radius:12px;padding:14px 18px;display:inline-block;margin:6px 0 16px}
 .center{text-align:center}
+.hero{padding:8px 0 22px}
+.hero .lead{font-size:19px;color:var(--muted);margin:10px 0 0;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 22px}
+.tile{background:var(--card);border-radius:16px;padding:16px 16px 14px}
+.tile svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tile b{display:block;margin:8px 0 2px;font-size:16px}.tile span{color:var(--muted);font-size:14px;line-height:1.4;display:block}
+.toc{background:var(--card);border-radius:16px;padding:16px 22px;margin:0 0 14px;font-size:15px}
+.toc b{display:block;margin-bottom:6px}.toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}.toc li{margin:3px 0}
+.toc a{color:var(--muted);text-decoration:none}.toc a:hover{color:var(--ink)}
+section h2{display:flex;align-items:center;gap:10px}
+section h2 .n{flex:none;width:26px;height:26px;border-radius:8px;background:var(--bg);font-size:13px;display:grid;place-items:center;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:4px 0 10px}
+th,td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);border-top:none}
+.note{color:var(--muted);font-size:15px}
+.contact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+button.button{border:0;cursor:pointer;font-family:inherit}
+section[id]{scroll-margin-top:16px}
 footer{color:var(--muted);font-size:13px;margin-top:32px;text-align:center}
 h1,h2,p,li{overflow-wrap:break-word;hyphens:auto}
-@media (max-width:480px){main{padding:32px 16px 64px}h1{font-size:28px}section{padding:18px}.code{font-size:22px;letter-spacing:2px}}
+@media (max-width:560px){.grid{grid-template-columns:1fr 1fr}.toc ol{columns:1}}
+@media (max-width:480px){main{padding:32px 16px 64px}h1{font-size:28px}section{padding:18px}.code{font-size:22px;letter-spacing:2px}.grid{gap:10px}.tile{padding:14px}th:nth-child(3),td:nth-child(3){display:none}}

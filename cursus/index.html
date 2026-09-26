@@ -15,5 +15,9 @@
 <section><h2>Abonnement</h2><p>Cursus s'utilise avec un abonnement mensuel ou annuel, avec 7 jours d'essai gratuit. Un seul abonnement vaut sur tous tes appareils Apple.</p></section>
 
 <nav><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a><a href="support.html">Support</a></nav>
-<footer>© 2026 Cursus · <a href="mailto:boulos.noah@gmail.com">boulos.noah@gmail.com</a></footer>
-</main></body></html>
+<footer>© 2026 Cursus</footer>
+</main><script>
+document.querySelectorAll('[data-mail]').forEach(function(b){b.addEventListener('click',function(){
+var a=['boulos.noah','gmail.com'].join(String.fromCharCode(64));
+location.href='mailto:'+a+'?subject='+encodeURIComponent(b.getAttribute('data-mail'));});});
+</script></body></html>
