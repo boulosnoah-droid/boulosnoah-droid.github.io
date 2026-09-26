@@ -1,61 +1,24 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Politique de confidentialité – Cursus</title><link rel="stylesheet" href="style.css"></head>
+<title>Politique de confidentialité – Cursus</title><link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"></head>
 <body><main>
-<header><div class="mark">✓</div><div class="brand">Cursus<small>Devoirs, examens et rappels</small></div>
+<header><img class="mark" src="logo.png" alt=""><div class="brand">Cursus<small>Devoirs, examens et rappels</small></div>
 <a class="lang" href="en/privacy.html">English</a></header>
 <h1>Politique de confidentialité</h1><p class="updated">Mise à jour le 26 septembre 2026</p>
-
-<div class="hero"><p class="lead">Cursus est fait pour t'aider à t'organiser, pas pour collecter tes données. Voici, simplement, ce qui est enregistré, où, et pourquoi.</p></div>
-<div class="grid">
-<div class="tile"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 4l16 16"/></svg><b>Aucune publicité</b><span>Ni dans l'app, ni ailleurs.</span></div>
-<div class="tile"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg><b>Aucun pistage</b><span>Pas de statistiques d'usage, pas de revente.</span></div>
-<div class="tile"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg><b>Hébergé en Suisse</b><span>Synchronisation facultative, à Zurich.</span></div>
-<div class="tile"><svg viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 002 2h6a2 2 0 002-2l1-12M9 7V4h6v3"/></svg><b>Supprimable</b><span>Efface ton compte depuis l'app, en un geste.</span></div>
-</div>
-<div class="toc" role="navigation" aria-label="Sommaire"><b>Sommaire</b><ol>
-<li><a href="#appareil">Sur ton appareil</a></li><li><a href="#synchro">Synchronisation</a></li>
-<li><a href="#achats">Abonnement et codes</a></li><li><a href="#calendrier">Calendrier</a></li>
-<li><a href="#partage">Partage</a></li><li><a href="#conservation">Conservation</a></li>
-<li><a href="#droits">Tes droits</a></li><li><a href="#enfants">Élèves et parents</a></li>
-<li><a href="#contact">Contact</a></li></ol></div>
-
-<section id="appareil"><h2><span class="n">1</span>Sur ton appareil</h2>
-<p>Sans compte, tout reste sur ton iPhone, iPad, Mac ou appareil Android : devoirs, examens, rappels, matières, champs personnalisés et réglages. Les widgets, l'Apple Watch et les notifications utilisent ces données localement ; les notifications sont programmées sur l'appareil, sans serveur.</p></section>
-
-<section id="synchro"><h2><span class="n">2</span>Synchronisation (facultative)</h2>
-<p>Si tu te connectes avec Apple pour retrouver tes données sur tous tes appareils :</p>
-<table><tr><th>Donnée</th><th>Pourquoi</th><th>Où</th></tr>
-<tr><td>Identifiant de compte</td><td>Relier tes appareils</td><td>Firebase Authentication</td></tr>
-<tr><td>E-mail (ou adresse relais Apple) et nom si tu le partages</td><td>Identifier ton compte</td><td>Firebase Authentication</td></tr>
-<tr><td>Devoirs, examens, rappels, champs, réglages</td><td>Les copier sur tes autres appareils</td><td>Cloud Firestore, Zurich</td></tr></table>
-<p class="note">Hébergement : Google Firebase, région europe-west6 (Zurich). Des règles de sécurité garantissent que seul ton compte peut lire ou modifier tes données. Google agit pour notre compte selon ses <a href="https://firebase.google.com/support/privacy">conditions de confidentialité</a>.</p></section>
-
-<section id="achats"><h2><span class="n">3</span>Abonnement et codes promo</h2>
-<p>Les paiements passent entièrement par Apple : nous ne voyons jamais tes coordonnées bancaires. L'app vérifie seulement, sur ton appareil, si un abonnement est actif. Si tu utilises un code promo, nous enregistrons que ton compte l'a utilisé, et quand, pour t'ouvrir l'accès.</p></section>
-
-<section id="calendrier"><h2><span class="n">4</span>Calendrier</h2>
-<p>Si tu actives « Afficher dans Calendrier », Cursus ajoute ce qui reste à faire dans le calendrier que tu choisis (iCloud, Google, Outlook… selon les comptes de ton appareil). Il ne lit ni ne modifie tes autres événements, seulement les siens. Rien n'est envoyé à nos serveurs.</p></section>
-
-<section id="partage"><h2><span class="n">5</span>Partage</h2>
-<p>Tes données ne sont ni vendues, ni louées, ni partagées avec des annonceurs, des services d'intelligence artificielle ou d'autres tiers. Seuls les prestataires techniques ci-dessus (Apple, Google Firebase) les traitent, pour faire fonctionner l'app.</p></section>
-
-<section id="conservation"><h2><span class="n">6</span>Conservation</h2>
-<p>Les données synchronisées sont gardées tant que ton compte existe. Un élément supprimé est marqué comme tel, pour que la suppression atteigne tous tes appareils. Quand tu supprimes ton compte, toutes tes données sont effacées de nos serveurs.</p></section>
-
-<section id="droits"><h2><span class="n">7</span>Tes droits</h2>
-<p>Selon la loi suisse sur la protection des données (nLPD) et le RGPD, tu peux demander l'accès à tes données, leur correction, leur suppression ou leur portabilité, et t'opposer à un traitement.</p>
-<ul><li><b>Supprimer ton compte :</b> Réglages › Synchronisation › Supprimer mon compte.</li>
-<li><b>Toute autre demande :</b> Réglages › Aide › Contacter le support.</li></ul>
-<p class="note">Tu peux aussi t'adresser à l'autorité de protection des données de ton pays (en Suisse : le PFPDT).</p></section>
-
-<section id="enfants"><h2><span class="n">8</span>Élèves et parents</h2>
-<p>Cursus est pensé pour les élèves et les étudiants : pas de publicité, pas de messagerie, pas d'achat autre que l'abonnement, qui passe par Apple (donc par « Demander l'autorisation » si ta famille l'utilise). La synchronisation est facultative ; si la loi de ton pays l'exige, demande l'accord d'un parent avant de l'activer.</p></section>
-
-<section id="contact"><h2><span class="n">9</span>Contact</h2>
-<p>Cursus est développé par Noah Boulos et publié sur l'App Store par Kareem Boulos, en Suisse. Le plus simple pour nous écrire : <b>Réglages › Aide › Contacter le support</b> dans l'app, qui prépare un e-mail avec les bonnes informations. Tu peux aussi passer par la <a href="support.html">page Support</a>.</p>
-<p class="note">Si cette politique change, la date en haut de page est mise à jour ; les changements importants seront annoncés dans l'app.</p></section>
-
+<div class="hero"><p class="lead">Cursus est fait pour t&#x27;aider à t&#x27;organiser, pas pour collecter tes données. Voici, simplement, ce qui est enregistré, où, et pourquoi.</p></div>
+<div class="grid"><div class="tile"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 4l16 16"/></svg><b>Aucune publicité</b><span>Ni dans l&#x27;app, ni ailleurs.</span></div><div class="tile"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg><b>Aucun pistage</b><span>Pas de statistiques d&#x27;usage, pas de revente.</span></div><div class="tile"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg><b>Hébergé en Suisse</b><span>Synchronisation facultative, à Zurich.</span></div><div class="tile"><svg viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 002 2h6a2 2 0 002-2l1-12M9 7V4h6v3"/></svg><b>Supprimable</b><span>Efface ton compte depuis l&#x27;app, en un geste.</span></div></div>
+<div class="toc" role="navigation" aria-label="Sommaire"><b>Sommaire</b><ol><li><a href="#appareil">Sur ton appareil</a></li><li><a href="#synchro">Synchronisation (facultative)</a></li><li><a href="#achats">Abonnement, achat à vie et codes</a></li><li><a href="#calendrier">Calendrier</a></li><li><a href="#partage">Partage</a></li><li><a href="#conservation">Conservation</a></li><li><a href="#droits">Tes droits</a></li><li><a href="#enfants">Élèves et parents</a></li><li><a href="#contact">Contact</a></li></ol></div>
+<section id="appareil"><h2><span class="n">1</span>Sur ton appareil</h2><p>Sans compte, tout reste sur ton iPhone, iPad, Mac ou appareil Android : devoirs, examens, rappels, matières, champs personnalisés et réglages. Les widgets, l&#x27;Apple Watch et les notifications utilisent ces données localement ; les notifications sont programmées sur l&#x27;appareil, sans serveur.</p></section>
+<section id="synchro"><h2><span class="n">2</span>Synchronisation (facultative)</h2><p>Si tu te connectes avec Apple pour retrouver tes données sur tous tes appareils :</p><table><tr><th>Donnée</th><th>Pourquoi</th><th>Où</th></tr><tr><td>Identifiant de compte</td><td>Relier tes appareils</td><td>Firebase Authentication</td></tr><tr><td>E-mail (ou adresse relais Apple) et nom si tu le partages</td><td>Identifier ton compte</td><td>Firebase Authentication</td></tr><tr><td>Devoirs, examens, rappels, champs, réglages</td><td>Les copier sur tes autres appareils</td><td>Cloud Firestore, Zurich</td></tr></table><p class="note">Hébergement : Google Firebase, région europe-west6 (Zurich). Des règles de sécurité garantissent que seul ton compte peut lire ou modifier tes données. Google agit pour notre compte selon ses conditions de confidentialité (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>).</p></section>
+<section id="achats"><h2><span class="n">3</span>Abonnement, achat à vie et codes</h2><p>Les paiements passent entièrement par Apple ou Google Play : nous ne voyons jamais tes coordonnées bancaires. L&#x27;app vérifie seulement, sur ton appareil, si un abonnement ou un achat à vie est actif. Si tu utilises un code promo Cursus, nous enregistrons que ton compte l&#x27;a utilisé, et quand, pour t&#x27;ouvrir l&#x27;accès.</p></section>
+<section id="calendrier"><h2><span class="n">4</span>Calendrier</h2><p>Si tu actives « Afficher dans Calendrier », Cursus ajoute ce qui reste à faire dans le calendrier que tu choisis (iCloud, Google, Outlook… selon les comptes de ton appareil). Il ne lit ni ne modifie tes autres événements, seulement les siens. Rien n&#x27;est envoyé à nos serveurs.</p></section>
+<section id="partage"><h2><span class="n">5</span>Partage</h2><p>Tes données ne sont ni vendues, ni louées, ni partagées avec des annonceurs, des services d&#x27;intelligence artificielle ou d&#x27;autres tiers. Seuls les prestataires techniques ci-dessus (Apple, Google) les traitent, pour faire fonctionner l&#x27;app.</p></section>
+<section id="conservation"><h2><span class="n">6</span>Conservation</h2><p>Les données synchronisées sont gardées tant que ton compte existe. Un élément supprimé est marqué comme tel, pour que la suppression atteigne tous tes appareils. Quand tu supprimes ton compte, toutes tes données sont effacées de nos serveurs.</p></section>
+<section id="droits"><h2><span class="n">7</span>Tes droits</h2><p>Selon la loi suisse sur la protection des données (nLPD) et le RGPD, tu peux demander l&#x27;accès à tes données, leur correction, leur suppression ou leur portabilité, et t&#x27;opposer à un traitement.</p><ul><li><b>Supprimer ton compte :</b> Réglages › Synchronisation › Supprimer mon compte.</li><li><b>Toute autre demande :</b> Réglages › Aide › Contacter le support.</li></ul><p class="note">Tu peux aussi t&#x27;adresser à l&#x27;autorité de protection des données de ton pays (en Suisse : le PFPDT).</p></section>
+<section id="enfants"><h2><span class="n">8</span>Élèves et parents</h2><p>Cursus est pensé pour les élèves et les étudiants : pas de publicité, pas de messagerie, pas d&#x27;achat en dehors de l&#x27;abonnement ou de l&#x27;achat à vie, qui passent par Apple ou Google Play (donc par le contrôle parental si ta famille l&#x27;utilise). La synchronisation est facultative ; si la loi de ton pays l&#x27;exige, demande l&#x27;accord d&#x27;un parent avant de l&#x27;activer.</p></section>
+<section id="contact"><h2><span class="n">9</span>Contact</h2><p>Cursus est développé par Noah Boulos et publié sur l&#x27;App Store par Kareem Boulos, en Suisse. Le plus simple pour nous écrire : <b>Réglages › Aide › Contacter le support</b> dans l&#x27;app, qui prépare un e-mail avec les bonnes informations.</p><p class="note">Si cette politique change, la date en haut de page est mise à jour ; les changements importants seront annoncés dans l&#x27;app.</p></section>
+<p class="note" style="margin-top:22px;text-align:center"><b>Français</b> · <a href="en/privacy.html">English</a> · <a href="es/privacy.html">Español</a> · <a href="de/privacy.html">Deutsch</a> · <a href="it/privacy.html">Italiano</a> · <a href="pt/privacy.html">Português</a> · <a href="nl/privacy.html">Nederlands</a> · <a href="pl/privacy.html">Polski</a> · <a href="ru/privacy.html">Русский</a> · <a href="ja/privacy.html">日本語</a></p>
 <nav><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a><a href="support.html">Support</a></nav>
 <footer>© 2026 Cursus</footer>
 </main><script>
