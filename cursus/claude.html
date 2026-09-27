@@ -89,7 +89,7 @@ h1,h2,p,li{overflow-wrap:break-word;hyphens:auto}
   var m=/[#&]k=([^&]+)/.exec(location.hash||''); var key=m?decodeURIComponent(m[1]):'';
   if(key){try{sessionStorage.setItem('cursusKey',key);}catch(e){} history.replaceState(null,'',location.pathname);}
   else{try{key=sessionStorage.getItem('cursusKey')||'';}catch(e){}}
-  var mobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)&&!/Macintosh/.test(navigator.userAgent);
+  var mobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)||(/Macintosh/.test(navigator.userAgent)&&navigator.maxTouchPoints>1);
   if(!key){document.getElementById('nokey').hidden=false;return;}
   if(mobile){document.getElementById('phone').hidden=false;return;}
   document.getElementById('go').hidden=false;
