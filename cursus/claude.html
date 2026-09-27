@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><title>Cursus – Connecter Claude</title><style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#0b0b0b;--muted:#66665f;--line:#e3e3df}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--ink:#f5f5f5;--muted:#9a9a93;--line:#2c2c2e}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 20px 80px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.mark{width:52px;height:52px;border-radius:12px;display:block}
+.brand{font-size:26px;font-weight:700;letter-spacing:-.5px}.brand small{display:block;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
+h1{font-size:34px;letter-spacing:-.8px;line-height:1.15;margin:0 0 6px}
+.updated{color:var(--muted);font-size:14px;margin:0 0 28px}
+section{background:var(--card);border-radius:16px;padding:20px 22px;margin:0 0 14px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.2px}
+p{margin:0 0 10px}ul{margin:0 0 10px;padding-left:20px}li{margin:4px 0}
+a{color:inherit;text-underline-offset:3px}
+nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:28px 0 0;font-size:15px}
+nav a{color:var(--muted)}
+.lang{margin-left:auto;font-size:14px}
+.button{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;padding:14px 26px;border-radius:14px;font-size:17px}
+.code{font:600 28px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:3px;background:var(--bg);border-radius:12px;padding:14px 18px;display:inline-block;margin:6px 0 16px}
+.center{text-align:center}
+.hero{padding:8px 0 22px}
+.hero .lead{font-size:19px;color:var(--muted);margin:10px 0 0;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 22px}
+.tile{background:var(--card);border-radius:16px;padding:16px 16px 14px}
+.tile svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tile b{display:block;margin:8px 0 2px;font-size:16px}.tile span{color:var(--muted);font-size:14px;line-height:1.4;display:block}
+.toc{background:var(--card);border-radius:16px;padding:16px 22px;margin:0 0 14px;font-size:15px}
+.toc b{display:block;margin-bottom:6px}.toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}.toc li{margin:3px 0}
+.toc a{color:var(--muted);text-decoration:none}.toc a:hover{color:var(--ink)}
+section h2{display:flex;align-items:center;gap:10px}
+section h2 .n{flex:none;width:26px;height:26px;border-radius:8px;background:var(--bg);font-size:13px;display:grid;place-items:center;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:4px 0 10px}
+th,td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);border-top:none}
+.note{color:var(--muted);font-size:15px}
+.contact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+button.button{border:0;cursor:pointer;font-family:inherit}
+section[id]{scroll-margin-top:16px}
+footer{color:var(--muted);font-size:13px;margin-top:32px;text-align:center}
+h1,h2,p,li{overflow-wrap:break-word;hyphens:auto}
+@media (max-width:560px){.grid{grid-template-columns:1fr 1fr}.toc ol{columns:1}}
+@media (max-width:480px){main{padding:32px 16px 64px}h1{font-size:28px}section{padding:18px}.code{font-size:22px;letter-spacing:2px}.grid{gap:10px}.tile{padding:14px}th:nth-child(3),td:nth-child(3){display:none}}
+
+.steps{counter-reset:s;list-style:none;padding:0}.steps li{counter-increment:s;position:relative;padding-left:40px;margin:14px 0}
+.steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hint{color:var(--muted);font-size:15px}.ok{font-weight:600}</style></head>
+<body><main>
+<header><img class="mark" src="logo.png" alt=""><div class="brand">Cursus<small data-t="tag">Devoirs, examens et rappels</small></div></header>
+<h1 data-t="title">Cursus dans Claude</h1>
+<p class="hint" data-t="lead">Demande à Claude ce que tu as à faire, tes prochains examens, ou d'ajouter un devoir : tout se retrouve dans l'app.</p>
+
+<section id="nokey" hidden>
+<h2 data-t="nokeyH">Ouvre cette page depuis l'app</h2>
+<p data-t="nokeyP">Dans Cursus : Réglages › Connecter Claude › Envoyer à mon ordinateur. Le lien reçu relie Claude à ton compte.</p>
+</section>
+
+<section id="phone" hidden>
+<h2 data-t="phoneH">Ouvre ce lien sur ton ordinateur</h2>
+<p data-t="phoneP">L'extension s'installe dans l'app Claude pour Mac ou Windows. Envoie-toi ce lien (AirDrop, Messages, e-mail) et ouvre-le sur l'ordinateur.</p>
+</section>
+
+<section id="go" hidden>
+<ol class="steps">
+<li><span data-t="s1">Si ce n'est pas déjà fait, installe l'app Claude pour ordinateur et connecte-toi :</span> <a href="https://claude.ai/download" target="_blank" rel="noopener">claude.ai/download</a></li>
+<li><span data-t="s2">Télécharge ton extension Cursus :</span><br><br><a class="button" id="dl" href="#" data-t="dl">Télécharger Cursus pour Claude</a> <span id="done" class="ok" hidden data-t="done">✓ Téléchargé</span></li>
+<li data-t="s3">Ouvre le fichier « Cursus.mcpb » téléchargé (double-clic). Claude s'ouvre : clique sur « Installer ». Si Claude demande une clé, laisse vide : elle est déjà dans le fichier.</li>
+<li data-t="s4">C'est prêt. Dans une nouvelle conversation, essaie : « Qu'est-ce que j'ai à faire demain ? », « Quels sont mes prochains examens ? » ou « Ajoute un devoir de maths pour jeudi : exercices 4 à 8 ».</li>
+</ol>
+<p class="hint" data-t="safe">Ce lien et le fichier contiennent ta clé personnelle : ne les partage avec personne. Ils ne donnent accès qu'à ton compte Cursus.</p>
+</section>
+<footer><a href="./" id="home">Cursus</a></footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+(function(){
+  var EN={tag:'Homework, exams and reminders',title:'Cursus in Claude',lead:'Ask Claude what you have to do, your next exams, or to add homework: everything shows up in the app.',
+    nokeyH:'Open this page from the app',nokeyP:'In Cursus: Settings › Connect Claude › Send to my computer. The link you get connects Claude to your account.',
+    phoneH:'Open this link on your computer',phoneP:'The extension installs in the Claude app for Mac or Windows. Send yourself this link (AirDrop, Messages, email) and open it on the computer.',
+    s1:'If you have not yet, install the Claude desktop app and sign in:',s2:'Download your Cursus extension:',dl:'Download Cursus for Claude',done:'✓ Downloaded',
+    s3:'Open the downloaded “Cursus.mcpb” file (double-click). Claude opens: click “Install”. If Claude asks for a key, leave it empty: it is already in the file.',
+    s4:'All set. In a new chat, try: “What do I have to do tomorrow?”, “What are my next exams?” or “Add maths homework for Thursday: exercises 4 to 8”.',
+    safe:'This link and the file contain your personal key: do not share them. They only give access to your Cursus account.'};
+  if(!/^fr/i.test(navigator.language||'')){document.documentElement.lang='en';
+    document.querySelectorAll('[data-t]').forEach(function(e){var t=EN[e.getAttribute('data-t')];if(t)e.textContent=t;});
+    document.getElementById('home').href='en/';}
+  var m=/[#&]k=([^&]+)/.exec(location.hash||''); var key=m?decodeURIComponent(m[1]):'';
+  if(key){try{sessionStorage.setItem('cursusKey',key);}catch(e){} history.replaceState(null,'',location.pathname);}
+  else{try{key=sessionStorage.getItem('cursusKey')||'';}catch(e){}}
+  var mobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)&&!/Macintosh/.test(navigator.userAgent);
+  if(!key){document.getElementById('nokey').hidden=false;return;}
+  if(mobile){document.getElementById('phone').hidden=false;return;}
+  document.getElementById('go').hidden=false;
+  document.getElementById('dl').addEventListener('click',function(ev){ev.preventDefault();
+    fetch('cursus.mcpb').then(function(r){return r.arrayBuffer();}).then(JSZip.loadAsync).then(function(z){
+      z.file('server/account.json',JSON.stringify({key:key}));
+      return z.generateAsync({type:'blob',compression:'DEFLATE'});
+    }).then(function(blob){var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Cursus.mcpb';
+      document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},2000);
+      document.getElementById('done').hidden=false;});
+  });
+})();
+</script></body></html>
