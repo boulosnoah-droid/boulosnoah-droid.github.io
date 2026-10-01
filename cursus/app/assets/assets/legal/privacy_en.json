@@ -1,0 +1,159 @@
+{
+ "title": "Privacy Policy",
+ "updated": "September 26, 2026",
+ "lead": "Cursus is made to help you get organised, not to collect your data. Here is, simply, what is stored, where, and why.",
+ "tiles": [
+  {
+   "icon": "ad",
+   "title": "No ads",
+   "text": "Not in the app, not anywhere."
+  },
+  {
+   "icon": "eye",
+   "title": "No tracking",
+   "text": "No usage analytics, no data selling."
+  },
+  {
+   "icon": "ch",
+   "title": "Hosted in Switzerland",
+   "text": "Optional sync, in Zurich."
+  },
+  {
+   "icon": "trash",
+   "title": "Deletable",
+   "text": "Erase your account from the app, in one tap."
+  }
+ ],
+ "sections": [
+  {
+   "title": "On your device",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Without an account, everything stays on your iPhone, iPad, Mac or Android device: homework, exams, reminders, subjects, custom fields and settings. Widgets, Apple Watch and notifications use this data locally; notifications are scheduled on the device, with no server."
+    }
+   ]
+  },
+  {
+   "title": "Sync (optional)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "If you sign in (with Apple or Google) to find your data on all your devices, including the web:"
+    },
+    {
+     "type": "table",
+     "header": [
+      "Data",
+      "Why",
+      "Where"
+     ],
+     "rows": [
+      [
+       "Account identifier",
+       "Link your devices",
+       "Firebase Authentication"
+      ],
+      [
+       "Email (or Apple relay address) and name if you share it",
+       "Identify your account",
+       "Firebase Authentication"
+      ],
+      [
+       "Homework, exams, reminders, fields, settings",
+       "Copy them to your other devices",
+       "Cloud Firestore, Zurich"
+      ],
+      [
+       "Proof of purchase or subscription, promo code used",
+       "Open your access on all your devices",
+       "Cursus server (Cloudflare)"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Hosting: Google Firebase, europe-west6 region (Zurich). Security rules ensure only your account can read or change your data. Google acts on our behalf under its privacy terms (firebase.google.com/support/privacy). The Cursus server (Cloudflare Workers) checks your access and, at your request, relays the requests of the Claude connector to your account; it keeps only your account identifier and the linked proof of purchase, never your homework."
+    }
+   ]
+  },
+  {
+   "title": "Subscription, lifetime purchase and codes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Payments go entirely through Apple or Google Play: we never see your payment details. The app only checks, on your device, whether a subscription or lifetime purchase is active. If you use a Cursus promo code, we record that your account used it, and when, to unlock access. To make your purchase open Cursus on your other devices, the app sends our server the proof of purchase signed by Apple; we only keep that it belongs to your account."
+    }
+   ]
+  },
+  {
+   "title": "Calendar",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "If you turn on \"Show in Calendar\", Cursus adds what's left to do to the calendar you choose (iCloud, Google, Outlook… depending on the accounts on your device). It never reads or changes your other events, only its own. Nothing is sent to our servers."
+    }
+   ]
+  },
+  {
+   "title": "Sharing",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Your data is never sold, rented or shared with advertisers, artificial intelligence services or other third parties. Only the technical providers above (Apple, Google, Cloudflare) process it, to make the app work."
+    }
+   ]
+  },
+  {
+   "title": "Retention",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Synced data is kept as long as your account exists. A deleted item is marked as such, so the deletion reaches all your devices. When you delete your account, all your data is erased from our servers."
+    }
+   ]
+  },
+  {
+   "title": "Your rights",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Under the Swiss Federal Act on Data Protection (FADP) and the GDPR, you can request access to, correction, deletion or portability of your data, and object to processing."
+    },
+    {
+     "type": "ul",
+     "items": [
+      "**Delete your account:** Settings › Sync › Delete my account.",
+      "**Any other request:** Settings › Help › Contact support."
+     ]
+    },
+    {
+     "type": "note",
+     "text": "You can also contact your data protection authority."
+    }
+   ]
+  },
+  {
+   "title": "Students and parents",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus is designed for pupils and students: no ads, no messaging, no purchase other than the subscription or lifetime purchase, which go through Apple or Google Play (and so through parental controls if your family uses them). Sync is optional; if the law in your country requires it, ask a parent before turning it on."
+    }
+   ]
+  },
+  {
+   "title": "Contact",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus is developed by Noah Boulos and published on the App Store by Kareem Boulos, in Switzerland. The easiest way to reach us: **Settings › Help › Contact support** in the app, which prepares an email with the right details."
+    },
+    {
+     "type": "note",
+     "text": "If this policy changes, the date at the top is updated; important changes will be announced in the app."
+    }
+   ]
+  }
+ ]
+}

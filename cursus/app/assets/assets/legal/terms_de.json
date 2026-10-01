@@ -1,0 +1,78 @@
+{
+ "title": "Nutzungsbedingungen",
+ "updated": "1. Oktober 2026",
+ "lead": "Die einfachen Regeln für die Nutzung von Cursus.",
+ "tiles": [],
+ "sections": [
+  {
+   "title": "Lizenz",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus wird unter der Standard-Lizenzvereinbarung von Apple für Apps lizenziert (EULA: apple.com/legal/internet-services/itunes/dev/stdeula), ergänzt durch die folgenden Bedingungen. Bei Widersprüchen hat die EULA von Apple Vorrang."
+    }
+   ]
+  },
+  {
+   "title": "Abo und lebenslanger Kauf",
+   "blocks": [
+    {
+     "type": "ul",
+     "items": [
+      "Cursus wird mit einem Monats- oder Jahresabo oder einem lebenslangen Kauf genutzt, bezahlt über deinen Apple- oder Google Play-Account.",
+      "Für Abos gibt es einmal pro Account einen kostenlosen 7-Tage-Test. Wird er nicht vor Ablauf gekündigt, beginnt das gewählte Abo automatisch.",
+      "Das Abo verlängert sich automatisch zum gleichen Preis, sofern es nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums in den Account-Einstellungen gekündigt wird.",
+      "Der lebenslange Kauf ist eine einmalige Zahlung ohne Verlängerung.",
+      "Es gilt der vor dem Kauf in der App angezeigte Preis in deiner Währung. Erstattungen wickeln Apple bzw. Google ab.",
+      "Ein Kauf auf einem Gerät gilt auf deinen anderen Geräten mit demselben Account."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Aktionscodes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Ein Cursus-Aktionscode gibt für den angegebenen Zeitraum (oder unbegrenzt) Zugang zur App, für ein einziges Konto. Er ist persönlich und kostenlos, darf nicht weiterverkauft oder gegen Geld getauscht werden und kann bei Missbrauch deaktiviert werden."
+    }
+   ]
+  },
+  {
+   "title": "Nutzung",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus ist ein Organisationswerkzeug: Du bleibst für deine Hausaufgaben und Fristen verantwortlich. Wir tun unser Bestes, damit Mitteilungen, Synchronisierung und Kalender zuverlässig funktionieren, können aber keine Ausfallfreiheit garantieren (Netz, System, Dienste von Apple oder Google)."
+    }
+   ]
+  },
+  {
+   "title": "Haftung",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Soweit gesetzlich zulässig, wird Cursus „wie besehen“ bereitgestellt und wir haften nicht für indirekte Schäden, etwa eine vergessene Hausaufgabe. Deine gesetzlichen Rechte bleiben unberührt."
+    }
+   ]
+  },
+  {
+   "title": "Anwendbares Recht",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Diese Bedingungen unterliegen Schweizer Recht, vorbehaltlich zwingender Vorschriften deines Wohnsitzlandes."
+    }
+   ]
+  },
+  {
+   "title": "Kontakt",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In der App: **Einstellungen › Hilfe › Support kontaktieren**."
+    }
+   ]
+  }
+ ]
+}

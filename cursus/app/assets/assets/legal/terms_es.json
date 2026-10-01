@@ -1,0 +1,78 @@
+{
+ "title": "Condiciones de uso",
+ "updated": "1 de octubre de 2026",
+ "lead": "Las reglas sencillas para usar Cursus.",
+ "tiles": [],
+ "sections": [
+  {
+   "title": "Licencia",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus se concede bajo el contrato de licencia estándar de Apple para apps (EULA: apple.com/legal/internet-services/itunes/dev/stdeula), completado por las condiciones siguientes. En caso de contradicción, prevalece el EULA de Apple."
+    }
+   ]
+  },
+  {
+   "title": "Suscripción y compra de por vida",
+   "blocks": [
+    {
+     "type": "ul",
+     "items": [
+      "Cursus se usa con una suscripción mensual o anual, o una compra de por vida, pagada con tu cuenta de Apple o de Google Play.",
+      "Se ofrece una prueba gratuita de 7 días una vez por cuenta en las suscripciones. Si no la cancelas antes de que termine, la suscripción elegida empieza automáticamente.",
+      "La suscripción se renueva automáticamente al mismo precio, salvo que la canceles al menos 24 horas antes del final del periodo actual, en los ajustes de tu cuenta.",
+      "La compra de por vida es un pago único, sin renovación.",
+      "Se aplica el precio mostrado en la app antes de la compra, en tu moneda. Los reembolsos los gestiona Apple o Google.",
+      "Una compra hecha en un dispositivo vale en tus demás dispositivos con la misma cuenta."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Códigos promocionales",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Un código promocional de Cursus da acceso a la app durante el periodo indicado (o sin límite), para una sola cuenta. Es personal y gratuito, no se puede revender ni cambiar por dinero, y puede desactivarse en caso de abuso."
+    }
+   ]
+  },
+  {
+   "title": "Uso",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus es una herramienta de organización: sigues siendo responsable de tus deberes y plazos. Hacemos lo posible para que las notificaciones, la sincronización y el calendario funcionen de forma fiable, sin poder garantizar que nunca fallen (red, sistema, servicios de Apple o Google)."
+    }
+   ]
+  },
+  {
+   "title": "Responsabilidad",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "En la medida permitida por la ley, Cursus se ofrece «tal cual» y no somos responsables de daños indirectos, como un deber olvidado. Nada de esto limita los derechos que te garantiza la ley."
+    }
+   ]
+  },
+  {
+   "title": "Ley aplicable",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Estas condiciones se rigen por el derecho suizo, sin perjuicio de las normas imperativas de tu país de residencia."
+    }
+   ]
+  },
+  {
+   "title": "Contacto",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "En la app: **Ajustes › Ayuda › Contactar con soporte**."
+    }
+   ]
+  }
+ ]
+}

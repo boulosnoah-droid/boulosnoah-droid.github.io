@@ -1,0 +1,78 @@
+{
+ "title": "Warunki korzystania",
+ "updated": "1 października 2026",
+ "lead": "Proste zasady korzystania z Cursus.",
+ "tiles": [],
+ "sections": [
+  {
+   "title": "Licencja",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus jest licencjonowany na podstawie standardowej umowy licencyjnej Apple dla aplikacji (EULA: apple.com/legal/internet-services/itunes/dev/stdeula), uzupełnionej poniższymi warunkami. W razie sprzeczności pierwszeństwo ma EULA Apple."
+    }
+   ]
+  },
+  {
+   "title": "Subskrypcja i zakup dożywotni",
+   "blocks": [
+    {
+     "type": "ul",
+     "items": [
+      "Z Cursus korzysta się w ramach subskrypcji miesięcznej lub rocznej albo zakupu dożywotniego, płatnych przez konto Apple lub Google Play.",
+      "W przypadku subskrypcji raz na konto dostępny jest bezpłatny 7-dniowy okres próbny. Jeśli nie anulujesz go przed końcem, wybrana subskrypcja zacznie się automatycznie.",
+      "Subskrypcja odnawia się automatycznie w tej samej cenie, chyba że zostanie anulowana co najmniej 24 godziny przed końcem bieżącego okresu w ustawieniach konta.",
+      "Zakup dożywotni to jednorazowa płatność, bez odnawiania.",
+      "Obowiązuje cena wyświetlona w aplikacji przed zakupem, w Twojej walucie. Zwrotami zajmuje się Apple lub Google.",
+      "Zakup na jednym urządzeniu obowiązuje na Twoich innych urządzeniach z tym samym kontem."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Kody promocyjne",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Kod promocyjny Cursus daje dostęp do aplikacji na wskazany okres (lub bez limitu), dla jednego konta. Jest osobisty i bezpłatny, nie można go odsprzedać ani wymienić na pieniądze, a w razie nadużyć może zostać dezaktywowany."
+    }
+   ]
+  },
+  {
+   "title": "Korzystanie",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus to narzędzie do organizacji: nadal odpowiadasz za swoje zadania i terminy. Robimy wszystko, by powiadomienia, synchronizacja i kalendarz działały niezawodnie, ale nie możemy zagwarantować braku awarii (sieć, system, usługi Apple lub Google)."
+    }
+   ]
+  },
+  {
+   "title": "Odpowiedzialność",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "W granicach dozwolonych przez prawo Cursus jest udostępniany „w stanie, w jakim jest” i nie odpowiadamy za szkody pośrednie, np. zapomniane zadanie. Nic tu nie ogranicza praw, które gwarantuje Ci prawo."
+    }
+   ]
+  },
+  {
+   "title": "Prawo właściwe",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Te warunki podlegają prawu szwajcarskiemu, z zastrzeżeniem bezwzględnie obowiązujących przepisów kraju Twojego zamieszkania."
+    }
+   ]
+  },
+  {
+   "title": "Kontakt",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "W aplikacji: **Ustawienia › Pomoc › Skontaktuj się z pomocą**."
+    }
+   ]
+  }
+ ]
+}

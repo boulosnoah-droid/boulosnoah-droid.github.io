@@ -52,6 +52,17 @@ h1,h2,p,li{overflow-wrap:break-word;hyphens:auto}
 <h1 data-t="title">Cursus dans Claude</h1>
 <p class="hint" data-t="lead">Demande à Claude ce que tu as à faire, tes prochains examens, ou d'ajouter un devoir : tout se retrouve dans l'app.</p>
 
+<section id="connector">
+<h2 data-t="connH">Android, iPhone, web, Windows : le connecteur</h2>
+<p data-t="connP">Sans rien installer : ajoute Cursus comme connecteur dans Claude. Il marche partout où tu te connectes à Claude (application Android ou iPhone, site web, ordinateur).</p>
+<ol class="steps">
+<li><span data-t="c1">Dans Claude : Paramètres › Connecteurs › Ajouter un connecteur personnalisé.</span></li>
+<li><span data-t="c2">Colle cette adresse :</span><br><br><span class="code" id="mcpUrl" style="font-size:16px;letter-spacing:0;word-break:break-all">https://cursus.babatos.workers.dev/mcp</span></li>
+<li data-t="c3">Claude te renvoie vers Cursus : connecte-toi avec le même compte que dans l'app et autorise.</li>
+</ol>
+<p class="hint" data-t="connNote">Il faut un abonnement Cursus actif (ou un code promo) sur ce compte. Selon ton forfait Claude, les connecteurs personnalisés peuvent demander un abonnement Claude payant.</p>
+</section>
+
 <section id="nokey" hidden>
 <h2 data-t="nokeyH">Ouvre cette page depuis l'app</h2>
 <p data-t="nokeyP">Dans Cursus : Réglages › Connecter Claude › Envoyer à mon ordinateur. Le lien reçu relie Claude à ton compte.</p>
@@ -82,6 +93,9 @@ h1,h2,p,li{overflow-wrap:break-word;hyphens:auto}
     s1:'If you have not yet, install the Claude desktop app and sign in:',s2:'Download your Cursus extension:',dl:'Download Cursus for Claude',done:'✓ Downloaded',
     s3:'Open the downloaded “Cursus.mcpb” file (double-click). Claude opens: click “Install”. If Claude asks for a key, leave it empty: it is already in the file.',
     s4:'All set. In a new chat, try: “What do I have to do tomorrow?”, “What are my next exams?” or “Add maths homework for Thursday: exercises 4 to 8”.',
+    connH:'Android, iPhone, web, Windows: the connector',connP:'Nothing to install: add Cursus as a connector in Claude. It works wherever you use Claude (Android or iPhone app, website, computer).',
+    c1:'In Claude: Settings › Connectors › Add custom connector.',c2:'Paste this address:',c3:'Claude sends you to Cursus: sign in with the same account as in the app and allow access.',
+    connNote:'This needs an active Cursus subscription (or a promo code) on that account. Depending on your Claude plan, custom connectors may require a paid Claude subscription.',
     safe:'This link and the file contain your personal key: do not share them. They only give access to your Cursus account.'};
   if(!/^fr/i.test(navigator.language||'')){document.documentElement.lang='en';
     document.querySelectorAll('[data-t]').forEach(function(e){var t=EN[e.getAttribute('data-t')];if(t)e.textContent=t;});

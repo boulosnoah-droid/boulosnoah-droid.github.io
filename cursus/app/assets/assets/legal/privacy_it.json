@@ -1,0 +1,159 @@
+{
+ "title": "Informativa sulla privacy",
+ "updated": "1 ottobre 2026",
+ "lead": "Cursus è fatto per aiutarti a organizzarti, non per raccogliere i tuoi dati. Ecco, in modo semplice, cosa viene salvato, dove e perché.",
+ "tiles": [
+  {
+   "icon": "ad",
+   "title": "Nessuna pubblicità",
+   "text": "Né nell'app né altrove."
+  },
+  {
+   "icon": "eye",
+   "title": "Nessun tracciamento",
+   "text": "Nessuna statistica d'uso, nessuna vendita di dati."
+  },
+  {
+   "icon": "ch",
+   "title": "Ospitato in Svizzera",
+   "text": "Sincronizzazione facoltativa, a Zurigo."
+  },
+  {
+   "icon": "trash",
+   "title": "Eliminabile",
+   "text": "Cancella il tuo account dall'app, con un gesto."
+  }
+ ],
+ "sections": [
+  {
+   "title": "Sul tuo dispositivo",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Senza account, tutto resta sul tuo iPhone, iPad, Mac o dispositivo Android: compiti, verifiche, promemoria, materie, campi personalizzati e impostazioni. Widget, Apple Watch e notifiche usano questi dati localmente; le notifiche sono programmate sul dispositivo, senza server."
+    }
+   ]
+  },
+  {
+   "title": "Sincronizzazione (facoltativa)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Se accedi (con Apple o Google) per ritrovare i tuoi dati su tutti i dispositivi, anche sul web:"
+    },
+    {
+     "type": "table",
+     "header": [
+      "Dato",
+      "Perché",
+      "Dove"
+     ],
+     "rows": [
+      [
+       "Identificativo dell'account",
+       "Collegare i tuoi dispositivi",
+       "Firebase Authentication"
+      ],
+      [
+       "E-mail (o indirizzo di inoltro Apple) e nome se lo condividi",
+       "Identificare il tuo account",
+       "Firebase Authentication"
+      ],
+      [
+       "Compiti, verifiche, promemoria, campi, impostazioni",
+       "Copiarli sugli altri dispositivi",
+       "Cloud Firestore, Zurigo"
+      ],
+      [
+       "Prova di acquisto o abbonamento e codice promozionale usato",
+       "Aprire il tuo accesso su tutti i dispositivi",
+       "Server di Cursus (Cloudflare)"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Hosting: Google Firebase, regione europe-west6 (Zurigo). Le regole di sicurezza garantiscono che solo il tuo account possa leggere o modificare i tuoi dati. Google agisce per nostro conto secondo le sue condizioni sulla privacy (firebase.google.com/support/privacy). Il server di Cursus (Cloudflare Workers) verifica il tuo accesso e, su tua richiesta, inoltra al tuo account le richieste del connettore Claude; conserva solo l'identificativo dell'account e la relativa prova di acquisto, mai i tuoi compiti."
+    }
+   ]
+  },
+  {
+   "title": "Abbonamento, acquisto a vita e codici",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "I pagamenti passano interamente da Apple o Google Play: non vediamo mai i tuoi dati di pagamento. L'app verifica solo, sul tuo dispositivo, se un abbonamento o un acquisto a vita è attivo. Se usi un codice promozionale Cursus, registriamo che il tuo account l'ha usato, e quando, per darti accesso. Perché il tuo acquisto apra Cursus sugli altri dispositivi, l'app invia al nostro server la prova di acquisto firmata da Apple; conserviamo solo il fatto che appartiene al tuo account."
+    }
+   ]
+  },
+  {
+   "title": "Calendario",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Se attivi «Mostra in Calendario», Cursus aggiunge ciò che resta da fare al calendario che scegli (iCloud, Google, Outlook… in base agli account del dispositivo). Non legge né modifica gli altri eventi, solo i propri. Nulla viene inviato ai nostri server."
+    }
+   ]
+  },
+  {
+   "title": "Condivisione",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "I tuoi dati non vengono venduti, affittati né condivisi con inserzionisti, servizi di intelligenza artificiale o altri terzi. Solo i fornitori tecnici indicati sopra (Apple, Google, Cloudflare) li trattano, per far funzionare l'app."
+    }
+   ]
+  },
+  {
+   "title": "Conservazione",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "I dati sincronizzati sono conservati finché esiste il tuo account. Un elemento eliminato viene contrassegnato come tale, perché l'eliminazione raggiunga tutti i dispositivi. Quando elimini l'account, tutti i tuoi dati vengono cancellati dai nostri server."
+    }
+   ]
+  },
+  {
+   "title": "I tuoi diritti",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In base alla legge svizzera sulla protezione dei dati (nLPD) e al GDPR, puoi chiedere l'accesso ai tuoi dati, la rettifica, la cancellazione o la portabilità, e opporti a un trattamento."
+    },
+    {
+     "type": "ul",
+     "items": [
+      "**Eliminare l'account:** Impostazioni › Sincronizzazione › Elimina il mio account.",
+      "**Qualsiasi altra richiesta:** Impostazioni › Aiuto › Contatta il supporto."
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Puoi anche rivolgerti all'autorità per la protezione dei dati del tuo paese."
+    }
+   ]
+  },
+  {
+   "title": "Studenti e genitori",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus è pensato per alunni e studenti: nessuna pubblicità, nessuna messaggistica, nessun acquisto oltre all'abbonamento o all'acquisto a vita, che passano da Apple o Google Play (e quindi dal controllo parentale se la tua famiglia lo usa). La sincronizzazione è facoltativa; se la legge del tuo paese lo richiede, chiedi il consenso di un genitore prima di attivarla."
+    }
+   ]
+  },
+  {
+   "title": "Contatti",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus è sviluppato da Noah Boulos e pubblicato sull'App Store da Kareem Boulos, in Svizzera. Il modo più semplice per scriverci: **Impostazioni › Aiuto › Contatta il supporto** nell'app, che prepara un'e-mail con le informazioni giuste."
+    },
+    {
+     "type": "note",
+     "text": "Se questa informativa cambia, la data in alto viene aggiornata; le modifiche importanti saranno annunciate nell'app."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "title": "Datenschutzerklärung",
+ "updated": "1. Oktober 2026",
+ "lead": "Cursus soll dir helfen, dich zu organisieren – nicht deine Daten sammeln. Hier steht ganz einfach, was gespeichert wird, wo und warum.",
+ "tiles": [
+  {
+   "icon": "ad",
+   "title": "Keine Werbung",
+   "text": "Weder in der App noch anderswo."
+  },
+  {
+   "icon": "eye",
+   "title": "Kein Tracking",
+   "text": "Keine Nutzungsstatistiken, kein Datenverkauf."
+  },
+  {
+   "icon": "ch",
+   "title": "In der Schweiz gehostet",
+   "text": "Optionale Synchronisierung, in Zürich."
+  },
+  {
+   "icon": "trash",
+   "title": "Löschbar",
+   "text": "Lösche dein Konto in der App mit einem Tipp."
+  }
+ ],
+ "sections": [
+  {
+   "title": "Auf deinem Gerät",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Ohne Konto bleibt alles auf deinem iPhone, iPad, Mac oder Android-Gerät: Hausaufgaben, Prüfungen, Erinnerungen, Fächer, eigene Felder und Einstellungen. Widgets, Apple Watch und Mitteilungen nutzen diese Daten lokal; Mitteilungen werden auf dem Gerät geplant, ohne Server."
+    }
+   ]
+  },
+  {
+   "title": "Synchronisierung (optional)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Wenn du dich (mit Apple oder Google) anmeldest, um deine Daten auf allen Geräten zu haben, auch im Web:"
+    },
+    {
+     "type": "table",
+     "header": [
+      "Daten",
+      "Wozu",
+      "Wo"
+     ],
+     "rows": [
+      [
+       "Konto-Kennung",
+       "Deine Geräte verbinden",
+       "Firebase Authentication"
+      ],
+      [
+       "E-Mail (oder Apple-Weiterleitungsadresse) und Name, falls du ihn teilst",
+       "Dein Konto erkennen",
+       "Firebase Authentication"
+      ],
+      [
+       "Hausaufgaben, Prüfungen, Erinnerungen, Felder, Einstellungen",
+       "Auf deine anderen Geräte kopieren",
+       "Cloud Firestore, Zürich"
+      ],
+      [
+       "Kauf- oder Abo-Nachweis und eingelöster Aktionscode",
+       "Deinen Zugang auf allen Geräten freischalten",
+       "Cursus-Server (Cloudflare)"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Hosting: Google Firebase, Region europe-west6 (Zürich). Sicherheitsregeln stellen sicher, dass nur dein Konto deine Daten lesen oder ändern kann. Google handelt in unserem Auftrag gemäß seinen Datenschutzbedingungen (firebase.google.com/support/privacy). Der Cursus-Server (Cloudflare Workers) prüft deinen Zugang und leitet auf deinen Wunsch die Anfragen des Claude-Connectors an dein Konto weiter; er speichert nur deine Konto-Kennung und den zugehörigen Kaufnachweis, nie deine Hausaufgaben."
+    }
+   ]
+  },
+  {
+   "title": "Abo, lebenslanger Kauf und Codes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Zahlungen laufen vollständig über Apple oder Google Play: Wir sehen nie deine Zahlungsdaten. Die App prüft nur auf deinem Gerät, ob ein Abo oder ein lebenslanger Kauf aktiv ist. Wenn du einen Cursus-Aktionscode verwendest, speichern wir, dass und wann dein Konto ihn verwendet hat, um dir Zugang zu geben. Damit dein Kauf Cursus auch auf deinen anderen Geräten freischaltet, sendet die App den von Apple signierten Kaufnachweis an unseren Server; wir speichern nur, dass er zu deinem Konto gehört."
+    }
+   ]
+  },
+  {
+   "title": "Kalender",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Wenn du „Im Kalender anzeigen“ aktivierst, trägt Cursus offene Aufgaben in den Kalender deiner Wahl ein (iCloud, Google, Outlook … je nach Konten auf deinem Gerät). Andere Ereignisse liest oder ändert Cursus nie, nur seine eigenen. Nichts wird an unsere Server gesendet."
+    }
+   ]
+  },
+  {
+   "title": "Weitergabe",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Deine Daten werden weder verkauft noch vermietet noch an Werbetreibende, KI-Dienste oder andere Dritte weitergegeben. Nur die oben genannten technischen Dienstleister (Apple, Google, Cloudflare) verarbeiten sie, damit die App funktioniert."
+    }
+   ]
+  },
+  {
+   "title": "Speicherdauer",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Synchronisierte Daten bleiben gespeichert, solange dein Konto besteht. Ein gelöschter Eintrag wird als gelöscht markiert, damit die Löschung alle deine Geräte erreicht. Wenn du dein Konto löschst, werden alle deine Daten von unseren Servern gelöscht."
+    }
+   ]
+  },
+  {
+   "title": "Deine Rechte",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Nach dem Schweizer Datenschutzgesetz (revDSG) und der DSGVO kannst du Auskunft, Berichtigung, Löschung oder Übertragung deiner Daten verlangen und einer Verarbeitung widersprechen."
+    },
+    {
+     "type": "ul",
+     "items": [
+      "**Konto löschen:** Einstellungen › Synchronisierung › Mein Konto löschen.",
+      "**Jede andere Anfrage:** Einstellungen › Hilfe › Support kontaktieren."
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Du kannst dich auch an die Datenschutzbehörde deines Landes wenden (in der Schweiz: den EDÖB)."
+    }
+   ]
+  },
+  {
+   "title": "Schüler und Eltern",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus ist für Schülerinnen, Schüler und Studierende gemacht: keine Werbung, keine Nachrichten, keine Käufe außer dem Abo oder dem lebenslangen Kauf, die über Apple oder Google Play laufen (und damit über die Kaufanfrage, wenn deine Familie sie nutzt). Die Synchronisierung ist optional; falls das Gesetz deines Landes es verlangt, frag vorher einen Elternteil."
+    }
+   ]
+  },
+  {
+   "title": "Kontakt",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus wird von Noah Boulos entwickelt und von Kareem Boulos im App Store veröffentlicht, in der Schweiz. Am einfachsten erreichst du uns über **Einstellungen › Hilfe › Support kontaktieren** in der App – dort wird eine E-Mail mit den richtigen Angaben vorbereitet."
+    },
+    {
+     "type": "note",
+     "text": "Ändert sich diese Erklärung, wird das Datum oben aktualisiert; wichtige Änderungen werden in der App angekündigt."
+    }
+   ]
+  }
+ ]
+}

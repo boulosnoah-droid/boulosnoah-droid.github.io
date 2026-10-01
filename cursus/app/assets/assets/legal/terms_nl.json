@@ -1,0 +1,78 @@
+{
+ "title": "Gebruiksvoorwaarden",
+ "updated": "1 oktober 2026",
+ "lead": "De eenvoudige regels voor het gebruik van Cursus.",
+ "tiles": [],
+ "sections": [
+  {
+   "title": "Licentie",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus wordt in licentie gegeven onder de standaard licentieovereenkomst van Apple voor apps (EULA: apple.com/legal/internet-services/itunes/dev/stdeula), aangevuld met de voorwaarden hieronder. Bij tegenstrijdigheid gaat de EULA van Apple voor."
+    }
+   ]
+  },
+  {
+   "title": "Abonnement en levenslange aankoop",
+   "blocks": [
+    {
+     "type": "ul",
+     "items": [
+      "Cursus wordt gebruikt met een maand- of jaarabonnement, of een levenslange aankoop, betaald via je Apple- of Google Play-account.",
+      "Bij abonnementen krijg je één keer per account een gratis proefperiode van 7 dagen. Zonder opzegging vóór het einde begint het gekozen abonnement automatisch.",
+      "Het abonnement wordt automatisch verlengd tegen dezelfde prijs, tenzij je het minstens 24 uur voor het einde van de huidige periode opzegt in je accountinstellingen.",
+      "De levenslange aankoop is een eenmalige betaling, zonder verlenging.",
+      "De prijs die vóór de aankoop in de app wordt getoond, in je valuta, geldt. Terugbetalingen worden afgehandeld door Apple of Google.",
+      "Een aankoop op één apparaat geldt op je andere apparaten met hetzelfde account."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Promotiecodes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Een Cursus-promotiecode geeft toegang tot de app gedurende de aangegeven periode (of onbeperkt), voor één account. Hij is persoonlijk en gratis, mag niet worden doorverkocht of ingeruild voor geld en kan bij misbruik worden gedeactiveerd."
+    }
+   ]
+  },
+  {
+   "title": "Gebruik",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus is een hulpmiddel om je te organiseren: je blijft zelf verantwoordelijk voor je huiswerk en deadlines. We doen ons best om meldingen, synchronisatie en agenda betrouwbaar te laten werken, maar kunnen niet garanderen dat er nooit storingen zijn (netwerk, systeem, diensten van Apple of Google)."
+    }
+   ]
+  },
+  {
+   "title": "Aansprakelijkheid",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Voor zover de wet het toestaat, wordt Cursus geleverd „zoals het is” en zijn we niet aansprakelijk voor indirecte schade, zoals vergeten huiswerk. Niets hiervan beperkt je wettelijke rechten."
+    }
+   ]
+  },
+  {
+   "title": "Toepasselijk recht",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Op deze voorwaarden is Zwitsers recht van toepassing, onverminderd de dwingende regels van je woonland."
+    }
+   ]
+  },
+  {
+   "title": "Contact",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In de app: **Instellingen › Hulp › Contact met support**."
+    }
+   ]
+  }
+ ]
+}

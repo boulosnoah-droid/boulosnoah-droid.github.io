@@ -1,0 +1,78 @@
+{
+ "title": "Conditions d'utilisation",
+ "updated": "26 septembre 2026",
+ "lead": "Les règles simples pour utiliser Cursus.",
+ "tiles": [],
+ "sections": [
+  {
+   "title": "Licence",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus est concédé sous licence selon le contrat de licence standard d'Apple pour les apps (EULA : apple.com/legal/internet-services/itunes/dev/stdeula), complété par les conditions ci-dessous. En cas de contradiction, l'EULA d'Apple prévaut."
+    }
+   ]
+  },
+  {
+   "title": "Abonnement et achat à vie",
+   "blocks": [
+    {
+     "type": "ul",
+     "items": [
+      "Cursus s'utilise avec un abonnement mensuel ou annuel, ou un achat à vie, payé via ton compte Apple ou Google Play.",
+      "Un essai gratuit de 7 jours est proposé une fois par compte Apple sur les abonnements. Sans résiliation avant sa fin, l'abonnement choisi commence automatiquement.",
+      "L'abonnement se renouvelle automatiquement au même prix, sauf résiliation au moins 24 heures avant la fin de la période en cours, dans les réglages de ton compte App Store.",
+      "L'achat à vie est un paiement unique, sans renouvellement.",
+      "Le prix affiché dans l'app avant l'achat, dans ta devise, fait foi. Les remboursements sont gérés par Apple ou Google.",
+      "Un achat fait sur un appareil Apple vaut sur tes autres appareils connectés au même compte Cursus, y compris sur le web ; un achat Google Play vaut sur Android."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Codes promo",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Un code promo Cursus donne accès à l'app pendant la durée indiquée (ou sans limite), pour un seul compte. Il est personnel, gratuit, ne peut pas être revendu ni échangé contre de l'argent, et peut être désactivé en cas d'abus."
+    }
+   ]
+  },
+  {
+   "title": "Utilisation",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus est un outil d'organisation : tu restes responsable de tes devoirs et de tes échéances. Nous faisons notre possible pour que les notifications, la synchronisation et le calendrier fonctionnent de manière fiable, sans pouvoir garantir l'absence de panne (réseau, système, services d'Apple ou de Google)."
+    }
+   ]
+  },
+  {
+   "title": "Responsabilité",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Dans les limites permises par la loi, Cursus est fourni « tel quel » et nous ne sommes pas responsables des dommages indirects, par exemple un devoir oublié. Rien ici ne limite les droits que la loi te garantit."
+    }
+   ]
+  },
+  {
+   "title": "Droit applicable",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Ces conditions sont soumises au droit suisse, sous réserve des règles impératives de ton pays de résidence."
+    }
+   ]
+  },
+  {
+   "title": "Contact",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Dans l'app : **Réglages › Aide › Contacter le support**."
+    }
+   ]
+  }
+ ]
+}

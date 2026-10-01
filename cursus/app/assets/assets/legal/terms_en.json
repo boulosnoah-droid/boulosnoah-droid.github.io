@@ -1,0 +1,78 @@
+{
+ "title": "Terms of Use",
+ "updated": "September 26, 2026",
+ "lead": "The simple rules for using Cursus.",
+ "tiles": [],
+ "sections": [
+  {
+   "title": "License",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus is licensed under Apple's Standard Licensed Application End User License Agreement (EULA: apple.com/legal/internet-services/itunes/dev/stdeula), supplemented by the terms below. In case of conflict, Apple's EULA prevails."
+    }
+   ]
+  },
+  {
+   "title": "Subscription and lifetime purchase",
+   "blocks": [
+    {
+     "type": "ul",
+     "items": [
+      "Cursus is used with a monthly or yearly subscription, or a lifetime purchase, paid through your Apple or Google Play account.",
+      "A 7-day free trial is offered once per Apple Account on subscriptions. Unless cancelled before it ends, the chosen subscription starts automatically.",
+      "The subscription renews automatically at the same price unless cancelled at least 24 hours before the end of the current period, in your App Store account settings.",
+      "The lifetime purchase is a single payment, with no renewal.",
+      "The price shown in the app before purchase, in your currency, applies. Refunds are handled by Apple or Google.",
+      "A purchase made on an Apple device works on your other devices signed in with the same Cursus account, including the web; a Google Play purchase works on Android."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Promo codes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A Cursus promo code gives access to the app for the stated period (or without limit), for one account. It is personal and free, cannot be resold or exchanged for money, and may be disabled in case of abuse."
+    }
+   ]
+  },
+  {
+   "title": "Use",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus is an organisation tool: you remain responsible for your homework and deadlines. We do our best to make notifications, sync and calendar work reliably, but cannot guarantee they will never fail (network, system, Apple or Google services)."
+    }
+   ]
+  },
+  {
+   "title": "Liability",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "To the extent permitted by law, Cursus is provided \"as is\" and we are not liable for indirect damages, such as forgotten homework. Nothing here limits your statutory rights."
+    }
+   ]
+  },
+  {
+   "title": "Governing law",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "These terms are governed by Swiss law, subject to the mandatory rules of your country of residence."
+    }
+   ]
+  },
+  {
+   "title": "Contact",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In the app: **Settings › Help › Contact support**."
+    }
+   ]
+  }
+ ]
+}

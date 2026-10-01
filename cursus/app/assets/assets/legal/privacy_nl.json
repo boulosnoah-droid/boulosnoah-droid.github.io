@@ -1,0 +1,159 @@
+{
+ "title": "Privacybeleid",
+ "updated": "1 oktober 2026",
+ "lead": "Cursus is gemaakt om je te helpen organiseren, niet om je gegevens te verzamelen. Hier staat eenvoudig wat er wordt opgeslagen, waar en waarom.",
+ "tiles": [
+  {
+   "icon": "ad",
+   "title": "Geen reclame",
+   "text": "Niet in de app en nergens anders."
+  },
+  {
+   "icon": "eye",
+   "title": "Geen tracking",
+   "text": "Geen gebruiksstatistieken, geen verkoop van gegevens."
+  },
+  {
+   "icon": "ch",
+   "title": "Gehost in Zwitserland",
+   "text": "Optionele synchronisatie, in Zürich."
+  },
+  {
+   "icon": "trash",
+   "title": "Verwijderbaar",
+   "text": "Verwijder je account in de app, met één tik."
+  }
+ ],
+ "sections": [
+  {
+   "title": "Op je apparaat",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Zonder account blijft alles op je iPhone, iPad, Mac of Android-apparaat: huiswerk, toetsen, herinneringen, vakken, eigen velden en instellingen. Widgets, Apple Watch en meldingen gebruiken deze gegevens lokaal; meldingen worden op het apparaat gepland, zonder server."
+    }
+   ]
+  },
+  {
+   "title": "Synchronisatie (optioneel)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Als je inlogt (met Apple of Google) om je gegevens op al je apparaten te hebben, ook op het web:"
+    },
+    {
+     "type": "table",
+     "header": [
+      "Gegeven",
+      "Waarom",
+      "Waar"
+     ],
+     "rows": [
+      [
+       "Account-ID",
+       "Je apparaten koppelen",
+       "Firebase Authentication"
+      ],
+      [
+       "E-mail (of Apple-doorstuuradres) en naam als je die deelt",
+       "Je account herkennen",
+       "Firebase Authentication"
+      ],
+      [
+       "Huiswerk, toetsen, herinneringen, velden, instellingen",
+       "Ze naar je andere apparaten kopiëren",
+       "Cloud Firestore, Zürich"
+      ],
+      [
+       "Aankoop- of abonnementsbewijs en gebruikte promotiecode",
+       "Je toegang op al je apparaten openen",
+       "Cursus-server (Cloudflare)"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Hosting: Google Firebase, regio europe-west6 (Zürich). Beveiligingsregels zorgen ervoor dat alleen jouw account je gegevens kan lezen of wijzigen. Google handelt namens ons volgens zijn privacyvoorwaarden (firebase.google.com/support/privacy). De Cursus-server (Cloudflare Workers) controleert je toegang en stuurt op jouw verzoek de aanvragen van de Claude-connector door naar je account; hij bewaart alleen je account-ID en het bijbehorende aankoopbewijs, nooit je huiswerk."
+    }
+   ]
+  },
+  {
+   "title": "Abonnement, levenslange aankoop en codes",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Betalingen lopen volledig via Apple of Google Play: we zien nooit je betaalgegevens. De app controleert alleen op je apparaat of er een actief abonnement of een levenslange aankoop is. Als je een Cursus-promotiecode gebruikt, noteren we dat en wanneer je account die heeft gebruikt, om je toegang te geven. Zodat je aankoop Cursus ook op je andere apparaten opent, stuurt de app het door Apple ondertekende aankoopbewijs naar onze server; we bewaren alleen dat het bij je account hoort."
+    }
+   ]
+  },
+  {
+   "title": "Agenda",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Als je ‘Tonen in Agenda’ aanzet, zet Cursus wat nog moet gebeuren in de agenda die je kiest (iCloud, Google, Outlook… afhankelijk van de accounts op je apparaat). Het leest of wijzigt nooit je andere activiteiten, alleen die van zichzelf. Er wordt niets naar onze servers gestuurd."
+    }
+   ]
+  },
+  {
+   "title": "Delen",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Je gegevens worden niet verkocht, verhuurd of gedeeld met adverteerders, AI-diensten of andere derden. Alleen de technische dienstverleners hierboven (Apple, Google, Cloudflare) verwerken ze, zodat de app werkt."
+    }
+   ]
+  },
+  {
+   "title": "Bewaartermijn",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Gesynchroniseerde gegevens worden bewaard zolang je account bestaat. Een verwijderd item wordt als zodanig gemarkeerd, zodat de verwijdering al je apparaten bereikt. Als je je account verwijdert, worden al je gegevens van onze servers gewist."
+    }
+   ]
+  },
+  {
+   "title": "Je rechten",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Volgens de Zwitserse wet op gegevensbescherming (nLPD) en de AVG kun je inzage, correctie, verwijdering of overdracht van je gegevens vragen en bezwaar maken tegen een verwerking."
+    },
+    {
+     "type": "ul",
+     "items": [
+      "**Je account verwijderen:** Instellingen › Synchronisatie › Mijn account verwijderen.",
+      "**Elk ander verzoek:** Instellingen › Hulp › Contact met support."
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Je kunt je ook wenden tot de privacytoezichthouder van je land."
+    }
+   ]
+  },
+  {
+   "title": "Leerlingen en ouders",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus is gemaakt voor leerlingen en studenten: geen reclame, geen berichten, geen aankopen behalve het abonnement of de levenslange aankoop, die via Apple of Google Play lopen (en dus via ouderlijk toezicht als je gezin dat gebruikt). Synchronisatie is optioneel; als de wet in je land het vereist, vraag dan eerst toestemming aan een ouder."
+    }
+   ]
+  },
+  {
+   "title": "Contact",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Cursus wordt ontwikkeld door Noah Boulos en in de App Store gepubliceerd door Kareem Boulos, in Zwitserland. De makkelijkste manier om ons te bereiken: **Instellingen › Hulp › Contact met support** in de app, die een e-mail met de juiste gegevens klaarzet."
+    },
+    {
+     "type": "note",
+     "text": "Als dit beleid verandert, wordt de datum bovenaan bijgewerkt; belangrijke wijzigingen worden in de app aangekondigd."
+    }
+   ]
+  }
+ ]
+}
