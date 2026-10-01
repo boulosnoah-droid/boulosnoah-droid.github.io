@@ -52,6 +52,7 @@ button.button[disabled]{opacity:.5}.err{color:#b3261e;font-weight:600}.hint{colo
 <section id="ask">
 <p><b id="who">Claude</b> <span data-t="wants">demande l'accès à tes devoirs, examens et rappels Cursus : les lire, en ajouter, les modifier, les cocher et les supprimer.</span></p>
 <p class="hint"><span data-t="to">Retour vers :</span> <span id="host"></span></p>
+<p id="warn" class="err" hidden data-t="warn">Cette demande renvoie vers un site qui n'est pas un site Claude habituel. N'autorise que si c'est toi qui l'as lancée depuis Claude.</p>
 <p><button class="button" id="go" data-t="go">Se connecter avec Google et autoriser</button></p>
 <p id="msg" class="hint" role="status"></p>
 <p class="hint" data-t="safe">Tu peux retirer l'accès à tout moment en supprimant le connecteur dans Claude. Rien ne passe par un serveur tiers : le connecteur lit ta base Cursus avec ton propre compte.</p>
@@ -65,11 +66,11 @@ import {getAuth, GoogleAuthProvider, signInWithPopup} from 'https://www.gstatic.
 // Le jeton n'est envoyé QU'À cette adresse (fixée à la génération du site).
 const SERVER = 'https://cursus.babatos.workers.dev';
 const EN = {tag:'Homework, exams and reminders',title:'Allow Claude?',wants:'is asking for access to your Cursus homework, exams and reminders: read, add, edit, tick and delete them.',
-  to:'Returning to:',go:'Sign in with Google and allow',safe:'You can remove access at any time by deleting the connector in Claude. Nothing goes through a third-party server: the connector reads your Cursus database with your own account.',
+  to:'Returning to:',warn:'This request returns to a site that is not a usual Claude site. Only allow it if you started it yourself from Claude.',popup:'The sign-in window was blocked. Allow pop-ups for this page, or open this link in your normal browser (Safari, Chrome).',go:'Sign in with Google and allow',safe:'You can remove access at any time by deleting the connector in Claude. Nothing goes through a third-party server: the connector reads your Cursus database with your own account.',
   invalid:'This link is no longer valid. Go back to Claude and start the Cursus connection again.',
   working:'Signing in…',noaccess:'This account has no active Cursus access yet: subscribe in the app with this account, or use a promo code, then try again.',
   failed:'Could not sign in. Check your connection and try again.',cancelled:'Sign-in cancelled.'};
-const FR = {working:'Connexion…',noaccess:"Ce compte n'a pas encore d'accès actif à Cursus : abonne-toi dans l'app avec ce compte, ou utilise un code promo, puis réessaie.",
+const FR = {popup:"La fenêtre de connexion a été bloquée. Autorise les fenêtres surgissantes pour cette page, ou ouvre ce lien dans ton navigateur habituel (Safari, Chrome).",working:'Connexion…',noaccess:"Ce compte n'a pas encore d'accès actif à Cursus : abonne-toi dans l'app avec ce compte, ou utilise un code promo, puis réessaie.",
   failed:'Connexion impossible. Vérifie ta connexion et réessaie.',cancelled:'Connexion annulée.'};
 const en = !/^fr/i.test(navigator.language || '');
 if (en) { document.documentElement.lang = 'en'; document.querySelectorAll('[data-t]').forEach(e => { const t = EN[e.dataset.t]; if (t) e.textContent = t; }); }
@@ -77,8 +78,18 @@ const T = en ? EN : FR;
 const q = new URLSearchParams(location.search);
 const req = q.get('req');
 if (!req) { document.getElementById('ask').hidden = true; document.getElementById('invalid').hidden = false; }
-document.getElementById('who').textContent = (q.get('client') || 'Claude').slice(0, 60);
-document.getElementById('host').textContent = (q.get('host') || '').slice(0, 80);
+// Qui demande l'accès et où l'on revient : lu dans la demande chiffrée du serveur
+// (jamais dans le lien, que n'importe qui peut fabriquer).
+if (req) {
+  fetch(SERVER + '/authorize/info', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({req})})
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(i => {
+      document.getElementById('who').textContent = String(i.name || 'Claude').slice(0, 60);
+      document.getElementById('host').textContent = String(i.host || '').slice(0, 80);
+      if (!i.trusted) document.getElementById('warn').hidden = false;
+    })
+    .catch(() => { document.getElementById('ask').hidden = true; document.getElementById('invalid').hidden = false; });
+}
 const app = initializeApp({apiKey:'AIzaSyAIVouC6iwCkV3axeDG-UHfUE7UtfOntW0',authDomain:'cursus-6443a.firebaseapp.com',projectId:'cursus-6443a',appId:'1:459303963369:web:9f2a536099d9b865473e78'});
 const msg = document.getElementById('msg'), go = document.getElementById('go');
 go.addEventListener('click', async () => {
@@ -93,7 +104,7 @@ go.addEventListener('click', async () => {
     msg.textContent = res.status === 402 ? T.noaccess : body.error === 'expired' ? (en ? EN.invalid : document.querySelector('[data-t=invalid]').textContent) : T.failed;
   } catch (e) {
     msg.className = 'err';
-    msg.textContent = (e && /popup-closed|cancelled/.test(e.code || '')) ? T.cancelled : T.failed;
+    msg.textContent = (e && /popup-closed|cancelled/.test(e.code || '')) ? T.cancelled : (e && /popup-blocked/.test(e.code || '')) ? T.popup : T.failed;
   }
   go.disabled = false;
 });
