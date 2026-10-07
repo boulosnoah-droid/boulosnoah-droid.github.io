@@ -54,6 +54,7 @@ button.button[disabled]{opacity:.5}.err{color:#b3261e;font-weight:600}.hint{colo
 <p class="hint"><span data-t="to">Retour vers :</span> <span id="host"></span></p>
 <p id="warn" class="err" hidden data-t="warn">Cette demande renvoie vers un site qui n'est pas un site Claude habituel. N'autorise que si c'est toi qui l'as lancée depuis Claude.</p>
 <p><button class="button" id="go" data-t="go">Se connecter avec Google et autoriser</button></p>
+<p id="appleRow" hidden><button class="button" id="goApple" data-t="goApple">Se connecter avec Apple et autoriser</button></p>
 <p id="msg" class="hint" role="status"></p>
 <p class="hint" data-t="safe">Tu peux retirer l'accès à tout moment en supprimant le connecteur dans Claude. Rien ne passe par un serveur tiers : le connecteur lit ta base Cursus avec ton propre compte.</p>
 </section>
@@ -62,11 +63,12 @@ button.button[disabled]{opacity:.5}.err{color:#b3261e;font-weight:600}.hint{colo
 </main>
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
-import {getAuth, GoogleAuthProvider, signInWithPopup} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+import {getAuth, GoogleAuthProvider, OAuthProvider, signInWithPopup} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+const APPLE_WEB = false;
 // Le jeton n'est envoyé QU'À cette adresse (fixée à la génération du site).
 const SERVER = 'https://cursus.babatos.workers.dev';
 const EN = {tag:'Homework, exams and reminders',title:'Allow Claude?',wants:'is asking for access to your Cursus homework, exams and reminders: read, add, edit, tick and delete them.',
-  to:'Returning to:',warn:'This request returns to a site that is not a usual Claude site. Only allow it if you started it yourself from Claude.',popup:'The sign-in window was blocked. Allow pop-ups for this page, or open this link in your normal browser (Safari, Chrome).',go:'Sign in with Google and allow',safe:'You can remove access at any time by deleting the connector in Claude. Nothing goes through a third-party server: the connector reads your Cursus database with your own account.',
+  to:'Returning to:',warn:'This request returns to a site that is not a usual Claude site. Only allow it if you started it yourself from Claude.',popup:'The sign-in window was blocked. Allow pop-ups for this page, or open this link in your normal browser (Safari, Chrome).',go:'Sign in with Google and allow',goApple:'Sign in with Apple and allow',safe:'You can remove access at any time by deleting the connector in Claude. Nothing goes through a third-party server: the connector reads your Cursus database with your own account.',
   invalid:'This link is no longer valid. Go back to Claude and start the Cursus connection again.',
   working:'Signing in…',noaccess:'This account has no active Cursus access yet: subscribe in the app with this account, or use a promo code, then try again.',
   failed:'Could not sign in. Check your connection and try again.',cancelled:'Sign-in cancelled.'};
@@ -92,10 +94,12 @@ if (req) {
 }
 const app = initializeApp({apiKey:'AIzaSyAIVouC6iwCkV3axeDG-UHfUE7UtfOntW0',authDomain:'cursus-6443a.firebaseapp.com',projectId:'cursus-6443a',appId:'1:459303963369:web:9f2a536099d9b865473e78'});
 const msg = document.getElementById('msg'), go = document.getElementById('go');
-go.addEventListener('click', async () => {
-  go.disabled = true; msg.className = 'hint'; msg.textContent = T.working;
+const goApple = document.getElementById('goApple');
+if (APPLE_WEB) document.getElementById('appleRow').hidden = false;
+async function signInAndAllow(makeProvider) {
+  go.disabled = true; goApple.disabled = true; msg.className = 'hint'; msg.textContent = T.working;
   try {
-    const cred = await signInWithPopup(getAuth(app), new GoogleAuthProvider());
+    const cred = await signInWithPopup(getAuth(app), makeProvider());
     const res = await fetch(SERVER + '/authorize/complete', {method:'POST', headers:{'Content-Type':'application/json'},
       body: JSON.stringify({req, refreshToken: cred.user.refreshToken, tz: Intl.DateTimeFormat().resolvedOptions().timeZone})});
     const body = await res.json().catch(() => ({}));
@@ -106,6 +110,8 @@ go.addEventListener('click', async () => {
     msg.className = 'err';
     msg.textContent = (e && /popup-closed|cancelled/.test(e.code || '')) ? T.cancelled : (e && /popup-blocked/.test(e.code || '')) ? T.popup : T.failed;
   }
-  go.disabled = false;
-});
+  go.disabled = false; goApple.disabled = false;
+}
+go.addEventListener('click', () => signInAndAllow(() => new GoogleAuthProvider()));
+goApple.addEventListener('click', () => signInAndAllow(() => { const p = new OAuthProvider('apple.com'); p.addScope('email'); p.addScope('name'); return p; }));
 </script></body></html>

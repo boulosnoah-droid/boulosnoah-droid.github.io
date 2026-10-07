@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><title>Cursus – Connecter Claude</title><style>
+<meta name="description" content="Connecte Cursus à Claude : demande tes devoirs et examens, ou ajoutes-en, depuis Claude. Un seul chemin, en 3 étapes.">
+<link rel="canonical" href="https://boulosnoah-droid.github.io/cursus/claude.html">
+<title>Cursus – Connecter Claude</title><style>
 :root{--bg:#f6f6f4;--card:#fff;--ink:#0b0b0b;--muted:#66665f;--line:#e3e3df}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--ink:#f5f5f5;--muted:#9a9a93;--line:#2c2c2e}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
@@ -51,69 +53,46 @@ h1,h2,p,li{overflow-wrap:break-word;hyphens:auto}
 <header><img class="mark" src="logo.png" alt=""><div class="brand">Cursus<small data-t="tag">Devoirs, examens et rappels</small></div></header>
 <h1 data-t="title">Cursus dans Claude</h1>
 <p class="hint" data-t="lead">Demande à Claude ce que tu as à faire, tes prochains examens, ou d'ajouter un devoir : tout se retrouve dans l'app.</p>
-
-<section id="connector">
-<h2 data-t="connH">Android, iPhone, web, Windows : le connecteur</h2>
-<p data-t="connP">Sans rien installer : ajoute Cursus comme connecteur dans Claude. Il marche partout où tu te connectes à Claude (application Android ou iPhone, site web, ordinateur).</p>
+<p><a class="button" id="add" href="https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Cursus&connectorUrl=https%3A%2F%2Fcursus.babatos.workers.dev%2Fmcp" target="_blank" rel="noopener" data-t="add">Ajouter Cursus à Claude</a></p>
 <ol class="steps">
-<li><span data-t="c1">Dans Claude : Paramètres › Connecteurs › Ajouter un connecteur personnalisé.</span></li>
-<li><span data-t="c2">Colle cette adresse :</span><br><br><span class="code" id="mcpUrl" style="font-size:16px;letter-spacing:0;word-break:break-all">https://cursus.babatos.workers.dev/mcp</span></li>
-<li data-t="c3">Claude te renvoie vers Cursus : connecte-toi avec le même compte que dans l'app et autorise.</li>
+<li data-t="s1">Clique sur « Ajouter Cursus à Claude » : Claude s'ouvre avec le connecteur déjà rempli (connecte-toi à Claude si on te le demande).</li>
+<li data-t="s2">Vérifie le nom et l'adresse, puis valide avec « Ajouter ».</li>
+<li data-t="s3">Clique sur « Connecter » et connecte-toi avec le même compte que dans Cursus. C'est tout.</li>
 </ol>
-<p class="hint" data-t="connNote">Il faut un abonnement Cursus actif (ou un code promo) sur ce compte. Selon ton forfait Claude, les connecteurs personnalisés peuvent demander un abonnement Claude payant.</p>
+<p class="hint" data-t="plans">Marche avec tous les forfaits de Claude, y compris le gratuit, sur le web, l'ordinateur, Android et iPhone. Il faut un abonnement Cursus actif (ou un code promo) sur ton compte.</p>
+<p class="hint" data-t="apple">Compte Apple ? Dans l'app Cursus, ouvre Réglages › Synchronisation › « Se connecter aussi avec Google » (une seule fois) : Claude pourra ainsi retrouver ton compte.</p>
+<section>
+<h2 data-t="addrH">Adresse du connecteur</h2>
+<p><span class="code" id="mcpUrl" style="font-size:16px;letter-spacing:0;word-break:break-all">https://cursus.babatos.workers.dev/mcp</span></p>
+<p><button class="button" id="copy" data-t="copy">Copier l'adresse</button> <span id="copied" class="ok" hidden data-t="copied">✓ Copiée</span></p>
+<p class="hint" data-t="manual">Si le bouton ne marche pas : dans Claude, ouvre Personnaliser › Connecteurs › Ajouter un connecteur personnalisé, puis colle cette adresse.</p>
 </section>
-
-<section id="nokey" hidden>
-<h2 data-t="nokeyH">Ouvre cette page depuis l'app</h2>
-<p data-t="nokeyP">Dans Cursus : Réglages › Connecter Claude › Envoyer à mon ordinateur. Le lien reçu relie Claude à ton compte.</p>
-</section>
-
-<section id="phone" hidden>
-<h2 data-t="phoneH">Ouvre ce lien sur ton ordinateur</h2>
-<p data-t="phoneP">L'extension s'installe dans l'app Claude pour Mac ou Windows. Envoie-toi ce lien (AirDrop, Messages, e-mail) et ouvre-le sur l'ordinateur.</p>
-</section>
-
-<section id="go" hidden>
-<ol class="steps">
-<li><span data-t="s1">Si ce n'est pas déjà fait, installe l'app Claude pour ordinateur et connecte-toi :</span> <a href="https://claude.ai/download" target="_blank" rel="noopener">claude.ai/download</a></li>
-<li><span data-t="s2">Télécharge ton extension Cursus :</span><br><br><a class="button" id="dl" href="#" data-t="dl">Télécharger Cursus pour Claude</a> <span id="done" class="ok" hidden data-t="done">✓ Téléchargé</span></li>
-<li data-t="s3">Ouvre le fichier « Cursus.mcpb » téléchargé (double-clic). Claude s'ouvre : clique sur « Installer ». Si Claude demande une clé, laisse vide : elle est déjà dans le fichier.</li>
-<li data-t="s4">C'est prêt. Dans une nouvelle conversation, essaie : « Qu'est-ce que j'ai à faire demain ? », « Quels sont mes prochains examens ? » ou « Ajoute un devoir de maths pour jeudi : exercices 4 à 8 ».</li>
-</ol>
-<p class="hint" data-t="safe">Ce lien et le fichier contiennent ta clé personnelle : ne les partage avec personne. Ils ne donnent accès qu'à ton compte Cursus.</p>
+<section>
+<h2 data-t="askH">À demander à Claude</h2>
+<p data-t="ask">« Qu'est-ce que j'ai à faire demain ? » · « Quels sont mes prochains examens ? » · « Ajoute un devoir de maths pour jeudi : exercices 4 à 8. » · « Coche mon devoir d'allemand. »</p>
 </section>
 <footer><a href="./" id="home">Cursus</a></footer>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
 (function(){
   var EN={tag:'Homework, exams and reminders',title:'Cursus in Claude',lead:'Ask Claude what you have to do, your next exams, or to add homework: everything shows up in the app.',
-    nokeyH:'Open this page from the app',nokeyP:'In Cursus: Settings › Connect Claude › Send to my computer. The link you get connects Claude to your account.',
-    phoneH:'Open this link on your computer',phoneP:'The extension installs in the Claude app for Mac or Windows. Send yourself this link (AirDrop, Messages, email) and open it on the computer.',
-    s1:'If you have not yet, install the Claude desktop app and sign in:',s2:'Download your Cursus extension:',dl:'Download Cursus for Claude',done:'✓ Downloaded',
-    s3:'Open the downloaded “Cursus.mcpb” file (double-click). Claude opens: click “Install”. If Claude asks for a key, leave it empty: it is already in the file.',
-    s4:'All set. In a new chat, try: “What do I have to do tomorrow?”, “What are my next exams?” or “Add maths homework for Thursday: exercises 4 to 8”.',
-    connH:'Android, iPhone, web, Windows: the connector',connP:'Nothing to install: add Cursus as a connector in Claude. It works wherever you use Claude (Android or iPhone app, website, computer).',
-    c1:'In Claude: Settings › Connectors › Add custom connector.',c2:'Paste this address:',c3:'Claude sends you to Cursus: sign in with the same account as in the app and allow access.',
-    connNote:'This needs an active Cursus subscription (or a promo code) on that account. Depending on your Claude plan, custom connectors may require a paid Claude subscription.',
-    safe:'This link and the file contain your personal key: do not share them. They only give access to your Cursus account.'};
+    add:'Add Cursus to Claude',
+    s1:'Click “Add Cursus to Claude”: Claude opens with the connector already filled in (sign in to Claude if asked).',
+    s2:'Check the name and address, then confirm with “Add”.',
+    s3:'Click “Connect” and sign in with the same account as in Cursus. That’s it.',
+    plans:'Works with every Claude plan, including the free one, on the web, desktop, Android and iPhone. Your Cursus account needs an active subscription (or a promo code).',
+    apple:'Apple account? In the Cursus app, open Settings › Sync › “Sign in with Google too” (just once): that lets Claude find your account.',
+    addrH:'Connector address',copy:'Copy the address',copied:'✓ Copied',
+    manual:'If the button doesn’t work: in Claude, open Customize › Connectors › Add custom connector, then paste this address.',
+    askH:'Ask Claude',ask:'“What do I have to do tomorrow?” · “What are my next exams?” · “Add maths homework for Thursday: exercises 4 to 8.” · “Tick my German homework.”'};
   if(!/^fr/i.test(navigator.language||'')){document.documentElement.lang='en';
     document.querySelectorAll('[data-t]').forEach(function(e){var t=EN[e.getAttribute('data-t')];if(t)e.textContent=t;});
     document.getElementById('home').href='en/';}
-  var m=/[#&]k=([^&]+)/.exec(location.hash||''); var key=m?decodeURIComponent(m[1]):'';
-  if(key){try{sessionStorage.setItem('cursusKey',key);}catch(e){} history.replaceState(null,'',location.pathname);}
-  else{try{key=sessionStorage.getItem('cursusKey')||'';}catch(e){}}
-  var mobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)||(/Macintosh/.test(navigator.userAgent)&&navigator.maxTouchPoints>1);
-  if(!key){document.getElementById('nokey').hidden=false;return;}
-  if(mobile){document.getElementById('phone').hidden=false;return;}
-  document.getElementById('go').hidden=false;
-  document.getElementById('dl').addEventListener('click',function(ev){ev.preventDefault();
-    fetch('cursus.mcpb').then(function(r){return r.arrayBuffer();}).then(JSZip.loadAsync).then(function(z){
-      z.file('server/account.json',JSON.stringify({key:key}));
-      return z.generateAsync({type:'blob',compression:'DEFLATE'});
-    }).then(function(blob){var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Cursus.mcpb';
-      document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},2000);
-      document.getElementById('done').hidden=false;});
+  document.getElementById('copy').addEventListener('click',function(){
+    var t=document.getElementById('mcpUrl').textContent;
+    var done=function(){document.getElementById('copied').hidden=false;};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,done);}
+    else{var r=document.createRange();r.selectNodeContents(document.getElementById('mcpUrl'));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');}catch(e){} done();}
   });
 })();
 </script></body></html>
