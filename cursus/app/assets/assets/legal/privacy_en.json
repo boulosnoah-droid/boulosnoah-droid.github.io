@@ -1,6 +1,6 @@
 {
  "title": "Privacy Policy",
- "updated": "September 26, 2026",
+ "updated": "October 7, 2026",
  "lead": "Cursus is made to help you get organised, not to collect your data. Here is, simply, what is stored, where, and why.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Payments go entirely through Apple or Google Play: we never see your payment details. The app only checks, on your device, whether a subscription or lifetime purchase is active. If you use a Cursus promo code, we record that your account used it, and when, to unlock access. To make your purchase open Cursus on your other devices, the app sends our server the proof of purchase signed by Apple; we only keep that it belongs to your account."
+     "text": "Payments go entirely through Apple or Google Play: we never see your payment details. The app only checks, on your device, whether a subscription or lifetime purchase is active. If you use a Cursus promo code, we record that your account used it, and when, to unlock access. To make your purchase open Cursus on your other devices, the app sends our server the proof of purchase signed by Apple; we only keep that it belongs to your account. On Android, the app sends the Google Play purchase token in the same way; our server checks it with Google, then keeps it together with the end date of your access (to re-check daily that it is still valid, for example after a refund), always linked to your account. It is erased with your account."
     }
    ]
   },

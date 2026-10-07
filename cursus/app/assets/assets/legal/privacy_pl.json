@@ -1,6 +1,6 @@
 {
  "title": "Polityka prywatności",
- "updated": "1 października 2026",
+ "updated": "7 października 2026",
  "lead": "Cursus ma pomagać Ci się organizować, a nie zbierać Twoje dane. Oto prosto: co jest zapisywane, gdzie i dlaczego.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Płatności przechodzą w całości przez Apple lub Google Play: nigdy nie widzimy Twoich danych płatniczych. Aplikacja sprawdza tylko na urządzeniu, czy subskrypcja lub zakup dożywotni są aktywne. Jeśli użyjesz kodu promocyjnego Cursus, zapisujemy, że i kiedy Twoje konto go użyło, aby dać Ci dostęp. Aby zakup otwierał Cursus na innych urządzeniach, aplikacja wysyła na nasz serwer dowód zakupu podpisany przez Apple; zapisujemy tylko, że należy do Twojego konta."
+     "text": "Płatności przechodzą w całości przez Apple lub Google Play: nigdy nie widzimy Twoich danych płatniczych. Aplikacja sprawdza tylko na urządzeniu, czy subskrypcja lub zakup dożywotni są aktywne. Jeśli użyjesz kodu promocyjnego Cursus, zapisujemy, że i kiedy Twoje konto go użyło, aby dać Ci dostęp. Aby zakup otwierał Cursus na innych urządzeniach, aplikacja wysyła na nasz serwer dowód zakupu podpisany przez Apple; zapisujemy tylko, że należy do Twojego konta. Na Androidzie aplikacja w ten sam sposób wysyła token zakupu Google Play; nasz serwer weryfikuje go w Google, a następnie przechowuje wraz z datą końca Twojego dostępu (aby codziennie sprawdzać, czy nadal jest ważny, np. po zwrocie pieniędzy), zawsze powiązany z Twoim kontem. Jest usuwany razem z kontem."
     }
    ]
   },

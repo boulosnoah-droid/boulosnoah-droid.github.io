@@ -1,6 +1,6 @@
 {
  "title": "Datenschutzerklärung",
- "updated": "1. Oktober 2026",
+ "updated": "7. Oktober 2026",
  "lead": "Cursus soll dir helfen, dich zu organisieren – nicht deine Daten sammeln. Hier steht ganz einfach, was gespeichert wird, wo und warum.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Zahlungen laufen vollständig über Apple oder Google Play: Wir sehen nie deine Zahlungsdaten. Die App prüft nur auf deinem Gerät, ob ein Abo oder ein lebenslanger Kauf aktiv ist. Wenn du einen Cursus-Aktionscode verwendest, speichern wir, dass und wann dein Konto ihn verwendet hat, um dir Zugang zu geben. Damit dein Kauf Cursus auch auf deinen anderen Geräten freischaltet, sendet die App den von Apple signierten Kaufnachweis an unseren Server; wir speichern nur, dass er zu deinem Konto gehört."
+     "text": "Zahlungen laufen vollständig über Apple oder Google Play: Wir sehen nie deine Zahlungsdaten. Die App prüft nur auf deinem Gerät, ob ein Abo oder ein lebenslanger Kauf aktiv ist. Wenn du einen Cursus-Aktionscode verwendest, speichern wir, dass und wann dein Konto ihn verwendet hat, um dir Zugang zu geben. Damit dein Kauf Cursus auch auf deinen anderen Geräten freischaltet, sendet die App den von Apple signierten Kaufnachweis an unseren Server; wir speichern nur, dass er zu deinem Konto gehört. Unter Android sendet die App ebenso das Google-Play-Kauf-Token; unser Server prüft es bei Google und speichert es zusammen mit dem Ablaufdatum deines Zugangs (um täglich erneut zu prüfen, ob es noch gültig ist, z. B. nach einer Rückerstattung), stets mit deinem Konto verknüpft. Es wird zusammen mit deinem Konto gelöscht."
     }
    ]
   },

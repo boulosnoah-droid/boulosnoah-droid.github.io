@@ -1,6 +1,6 @@
 {
  "title": "Informativa sulla privacy",
- "updated": "1 ottobre 2026",
+ "updated": "7 ottobre 2026",
  "lead": "Cursus è fatto per aiutarti a organizzarti, non per raccogliere i tuoi dati. Ecco, in modo semplice, cosa viene salvato, dove e perché.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "I pagamenti passano interamente da Apple o Google Play: non vediamo mai i tuoi dati di pagamento. L'app verifica solo, sul tuo dispositivo, se un abbonamento o un acquisto a vita è attivo. Se usi un codice promozionale Cursus, registriamo che il tuo account l'ha usato, e quando, per darti accesso. Perché il tuo acquisto apra Cursus sugli altri dispositivi, l'app invia al nostro server la prova di acquisto firmata da Apple; conserviamo solo il fatto che appartiene al tuo account."
+     "text": "I pagamenti passano interamente da Apple o Google Play: non vediamo mai i tuoi dati di pagamento. L'app verifica solo, sul tuo dispositivo, se un abbonamento o un acquisto a vita è attivo. Se usi un codice promozionale Cursus, registriamo che il tuo account l'ha usato, e quando, per darti accesso. Perché il tuo acquisto apra Cursus sugli altri dispositivi, l'app invia al nostro server la prova di acquisto firmata da Apple; conserviamo solo il fatto che appartiene al tuo account. Su Android l'app invia allo stesso modo il token di acquisto di Google Play; il nostro server lo verifica con Google e lo conserva insieme alla data di fine del tuo accesso (per ricontrollare ogni giorno che sia ancora valido, ad esempio dopo un rimborso), sempre collegato al tuo account. Viene cancellato insieme al tuo account."
     }
    ]
   },

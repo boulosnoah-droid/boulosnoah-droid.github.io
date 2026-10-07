@@ -1,6 +1,6 @@
 {
  "title": "Privacybeleid",
- "updated": "1 oktober 2026",
+ "updated": "7 oktober 2026",
  "lead": "Cursus is gemaakt om je te helpen organiseren, niet om je gegevens te verzamelen. Hier staat eenvoudig wat er wordt opgeslagen, waar en waarom.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Betalingen lopen volledig via Apple of Google Play: we zien nooit je betaalgegevens. De app controleert alleen op je apparaat of er een actief abonnement of een levenslange aankoop is. Als je een Cursus-promotiecode gebruikt, noteren we dat en wanneer je account die heeft gebruikt, om je toegang te geven. Zodat je aankoop Cursus ook op je andere apparaten opent, stuurt de app het door Apple ondertekende aankoopbewijs naar onze server; we bewaren alleen dat het bij je account hoort."
+     "text": "Betalingen lopen volledig via Apple of Google Play: we zien nooit je betaalgegevens. De app controleert alleen op je apparaat of er een actief abonnement of een levenslange aankoop is. Als je een Cursus-promotiecode gebruikt, noteren we dat en wanneer je account die heeft gebruikt, om je toegang te geven. Zodat je aankoop Cursus ook op je andere apparaten opent, stuurt de app het door Apple ondertekende aankoopbewijs naar onze server; we bewaren alleen dat het bij je account hoort. Op Android stuurt de app op dezelfde manier het Google Play-aankooptoken; onze server controleert het bij Google en bewaart het samen met de einddatum van je toegang (om elke dag opnieuw te controleren of het nog geldig is, bijvoorbeeld na een terugbetaling), altijd gekoppeld aan je account. Het wordt samen met je account gewist."
     }
    ]
   },

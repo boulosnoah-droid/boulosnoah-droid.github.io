@@ -1,6 +1,6 @@
 {
  "title": "Politique de confidentialité",
- "updated": "26 septembre 2026",
+ "updated": "7 octobre 2026",
  "lead": "Cursus est fait pour t'aider à t'organiser, pas pour collecter tes données. Voici, simplement, ce qui est enregistré, où, et pourquoi.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Les paiements passent entièrement par Apple ou Google Play : nous ne voyons jamais tes coordonnées bancaires. L'app vérifie seulement, sur ton appareil, si un abonnement ou un achat à vie est actif. Si tu utilises un code promo Cursus, nous enregistrons que ton compte l'a utilisé, et quand, pour t'ouvrir l'accès. Pour que ton achat ouvre Cursus sur tes autres appareils, l'app envoie à notre serveur la preuve d'achat signée par Apple ; nous gardons seulement qu'elle appartient à ton compte."
+     "text": "Les paiements passent entièrement par Apple ou Google Play : nous ne voyons jamais tes coordonnées bancaires. L'app vérifie seulement, sur ton appareil, si un abonnement ou un achat à vie est actif. Si tu utilises un code promo Cursus, nous enregistrons que ton compte l'a utilisé, et quand, pour t'ouvrir l'accès. Pour que ton achat ouvre Cursus sur tes autres appareils, l'app envoie à notre serveur la preuve d'achat signée par Apple ; nous gardons seulement qu'elle appartient à ton compte. Sur Android, l'app envoie de la même façon le jeton d'achat Google Play ; notre serveur le vérifie auprès de Google, puis le garde avec la date de fin de ton accès (pour revérifier chaque jour qu'il est toujours valable, par exemple après un remboursement), toujours rattaché à ton compte. Il est effacé avec ton compte."
     }
    ]
   },

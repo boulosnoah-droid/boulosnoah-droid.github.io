@@ -1,6 +1,6 @@
 {
  "title": "Política de privacidade",
- "updated": "1 de outubro de 2026",
+ "updated": "7 de outubro de 2026",
  "lead": "O Cursus foi feito para o ajudar a organizar-se, não para recolher os seus dados. Eis, de forma simples, o que é guardado, onde e porquê.",
  "tiles": [
   {
@@ -82,7 +82,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Os pagamentos passam inteiramente pela Apple ou pelo Google Play: nunca vemos os seus dados de pagamento. A app apenas verifica, no seu dispositivo, se há uma subscrição ou compra vitalícia ativa. Se usar um código promocional Cursus, registamos que a sua conta o usou, e quando, para lhe dar acesso. Para que a sua compra abra o Cursus nos outros dispositivos, a app envia ao nosso servidor a prova de compra assinada pela Apple; guardamos apenas que pertence à sua conta."
+     "text": "Os pagamentos passam inteiramente pela Apple ou pelo Google Play: nunca vemos os seus dados de pagamento. A app apenas verifica, no seu dispositivo, se há uma subscrição ou compra vitalícia ativa. Se usar um código promocional Cursus, registamos que a sua conta o usou, e quando, para lhe dar acesso. Para que a sua compra abra o Cursus nos outros dispositivos, a app envia ao nosso servidor a prova de compra assinada pela Apple; guardamos apenas que pertence à sua conta. No Android, a app envia da mesma forma o token de compra do Google Play; o nosso servidor verifica-o junto da Google e guarda-o com a data de fim do seu acesso (para voltar a verificar todos os dias se ainda é válido, por exemplo após um reembolso), sempre associado à sua conta. É apagado com a sua conta."
     }
    ]
   },
