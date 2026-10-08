@@ -64,7 +64,7 @@ button.button[disabled]{opacity:.5}.err{color:#b3261e;font-weight:600}.hint{colo
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
 import {getAuth, GoogleAuthProvider, OAuthProvider, signInWithPopup} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
-const APPLE_WEB = false;
+const APPLE_WEB = true;
 // Le jeton n'est envoyé QU'À cette adresse (fixée à la génération du site).
 const SERVER = 'https://cursus.babatos.workers.dev';
 const EN = {tag:'Homework, exams and reminders',title:'Allow Claude?',wants:'is asking for access to your Cursus homework, exams and reminders: read, add, edit, tick and delete them.',
